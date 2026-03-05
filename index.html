@@ -80,6 +80,13 @@
             .lang-switch:hover {
                 transform: scale(1.1);
             }
+            .export-card {
+                transition: all 0.3s ease;
+            }
+            .export-card:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            }
         }
     </style>
 </head>
@@ -130,7 +137,7 @@
     <section id="home" class="hero-bg h-screen flex items-center justify-center pt-16">
         <div class="text-white text-center max-w-3xl px-4 animate-fade-in">
             <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight" data-zh="专业金属门窗加工，<br>品质铸就未来" data-en="Professional Metal Door & Window Processing,<br>Quality Builds the Future">专业金属门窗加工，<br>品质铸就未来</h1>
-            <p class="text-lg md:text-xl mb-8 opacity-90" data-zh="凤台县赵中伍门窗加工有限公司，专注铝合金、断桥铝门窗加工，为您提供优质的门窗解决方案" data-en="Fengtai County Zhaozhongwu Door and Window Processing Co., Ltd., specializing in aluminum alloy and broken-bridge aluminum door and window processing, providing you with high-quality door and window solutions">凤台县赵中伍门窗加工有限公司，专注铝合金、断桥铝门窗加工，为您提供优质的门窗解决方案</p>
+            <p class="text-lg md:text-xl mb-8 opacity-90" data-zh="凤台县赵中伍门窗加工有限公司，专注铝合金、断桥铝门窗加工，为您提供优质的门窗解决方案，支持外贸代工、贴牌、代理出口等多种合作模式" data-en="Fengtai County Zhaozhongwu Door and Window Processing Co., Ltd., specializing in aluminum alloy and broken-bridge aluminum door and window processing, providing you with high-quality door and window solutions, supporting OEM, ODM, agent export and other cooperation modes">凤台县赵中伍门窗加工有限公司，专注铝合金、断桥铝门窗加工，为您提供优质的门窗解决方案，支持外贸代工、贴牌、代理出口等多种合作模式</p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="#products" class="bg-white text-primary px-8 py-3 rounded-lg hover:bg-gray-100 transition-colors font-medium" data-zh="查看产品" data-en="View Products">查看产品</a>
                 <a href="#contact" class="bg-primary text-white px-8 py-3 rounded-lg hover:bg-primary/90 transition-colors font-medium" data-zh="获取报价" data-en="Get Quote">获取报价</a>
@@ -148,11 +155,12 @@
                     <img src="https://images.unsplash.com/photo-1597836231366-38645d0c5026?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="铝合金门窗" class="w-full h-56 object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-bold mb-2" data-zh="铝合金门窗" data-en="Aluminum Alloy Doors & Windows">铝合金门窗</h3>
-                        <p class="text-secondary mb-4" data-zh="坚固耐用，隔音隔热，适合各类建筑使用，具有良好的耐腐蚀性和密封性" data-en="Durable, soundproof and heat-insulating, suitable for various buildings, with good corrosion resistance and sealing performance">坚固耐用，隔音隔热，适合各类建筑使用，具有良好的耐腐蚀性和密封性</p>
+                        <p class="text-secondary mb-4" data-zh="坚固耐用，隔音隔热，适合各类建筑使用，具有良好的耐腐蚀性和密封性，符合国际标准" data-en="Durable, soundproof and heat-insulating, suitable for various buildings, with good corrosion resistance and sealing performance, meeting international standards">坚固耐用，隔音隔热，适合各类建筑使用，具有良好的耐腐蚀性和密封性，符合国际标准</p>
                         <ul class="text-secondary space-y-1 mb-4">
                             <li><i class="fa fa-check text-primary mr-2"></i> <span data-zh="优质铝合金材质" data-en="High-quality aluminum alloy material">优质铝合金材质</span></li>
                             <li><i class="fa fa-check text-primary mr-2"></i> <span data-zh="隔音隔热设计" data-en="Soundproof and heat-insulating design">隔音隔热设计</span></li>
                             <li><i class="fa fa-check text-primary mr-2"></i> <span data-zh="多种颜色可选" data-en="Multiple colors available">多种颜色可选</span></li>
+                            <li><i class="fa fa-check text-primary mr-2"></i> <span data-zh="支持定制化" data-en="Support customization">支持定制化</span></li>
                         </ul>
                         <a href="#contact" class="text-primary hover:text-primary/80 transition-colors font-medium" data-zh="了解更多" data-en="Learn More">了解更多 <i class="fa fa-arrow-right ml-1"></i></a>
                     </div>
@@ -162,11 +170,12 @@
                     <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="断桥铝门窗" class="w-full h-56 object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-bold mb-2" data-zh="断桥铝门窗" data-en="Broken-Bridge Aluminum Doors & Windows">断桥铝门窗</h3>
-                        <p class="text-secondary mb-4" data-zh="节能保温，密封性好，适合高端建筑使用，有效降低能源消耗" data-en="Energy-saving and heat-preserving, good sealing performance, suitable for high-end buildings, effectively reducing energy consumption">节能保温，密封性好，适合高端建筑使用，有效降低能源消耗</p>
+                        <p class="text-secondary mb-4" data-zh="节能保温，密封性好，适合高端建筑使用，有效降低能源消耗，符合欧盟CE标准" data-en="Energy-saving and heat-preserving, good sealing performance, suitable for high-end buildings, effectively reducing energy consumption, meeting EU CE standards">节能保温，密封性好，适合高端建筑使用，有效降低能源消耗，符合欧盟CE标准</p>
                         <ul class="text-secondary space-y-1 mb-4">
                             <li><i class="fa fa-check text-primary mr-2"></i> <span data-zh="断桥隔热设计" data-en="Broken-bridge heat insulation design">断桥隔热设计</span></li>
                             <li><i class="fa fa-check text-primary mr-2"></i> <span data-zh="优异的保温性能" data-en="Excellent heat preservation performance">优异的保温性能</span></li>
                             <li><i class="fa fa-check text-primary mr-2"></i> <span data-zh="高品质五金配件" data-en="High-quality hardware accessories">高品质五金配件</span></li>
+                            <li><i class="fa fa-check text-primary mr-2"></i> <span data-zh="10年质保服务" data-en="10-year warranty service">10年质保服务</span></li>
                         </ul>
                         <a href="#contact" class="text-primary hover:text-primary/80 transition-colors font-medium" data-zh="了解更多" data-en="Learn More">了解更多 <i class="fa fa-arrow-right ml-1"></i></a>
                     </div>
@@ -176,11 +185,27 @@
                     <img src="https://images.unsplash.com/photo-1581092173398-308f2182f3dd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="定制门窗" class="w-full h-56 object-cover">
                     <div class="p-6">
                         <h3 class="text-xl font-bold mb-2" data-zh="定制门窗" data-en="Custom Doors & Windows">定制门窗</h3>
-                        <p class="text-secondary mb-4" data-zh="根据客户需求定制，满足个性化设计要求，适用于特殊建筑场景" data-en="Customized according to customer needs, meeting personalized design requirements, suitable for special building scenarios">根据客户需求定制，满足个性化设计要求，适用于特殊建筑场景</p>
+                        <p class="text-secondary mb-4" data-zh="根据客户需求定制，满足个性化设计要求，适用于特殊建筑场景，支持外贸小批量定制" data-en="Customized according to customer needs, meeting personalized design requirements, suitable for special building scenarios, supporting small-batch foreign trade customization">根据客户需求定制，满足个性化设计要求，适用于特殊建筑场景，支持外贸小批量定制</p>
                         <ul class="text-secondary space-y-1 mb-4">
                             <li><i class="fa fa-check text-primary mr-2"></i> <span data-zh="个性化设计" data-en="Personalized design">个性化设计</span></li>
                             <li><i class="fa fa-check text-primary mr-2"></i> <span data-zh="精准尺寸定制" data-en="Precise size customization">精准尺寸定制</span></li>
                             <li><i class="fa fa-check text-primary mr-2"></i> <span data-zh="专属解决方案" data-en="Exclusive solutions">专属解决方案</span></li>
+                            <li><i class="fa fa-check text-primary mr-2"></i> <span data-zh="快速打样服务" data-en="Quick prototyping service">快速打样服务</span></li>
+                        </ul>
+                        <a href="#contact" class="text-primary hover:text-primary/80 transition-colors font-medium" data-zh="了解更多" data-en="Learn More">了解更多 <i class="fa fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="product-card bg-neutral rounded-xl shadow-lg overflow-hidden animate-scale-in" style="animation-delay: 0.6s">
+                    <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="不锈钢制品" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2" data-zh="不锈钢制品" data-en="Stainless Steel Products">不锈钢制品</h3>
+                        <p class="text-secondary mb-4" data-zh="不锈钢家具、不锈钢板材、不锈钢装饰管加工，品质优良，适合各类建筑装饰使用" data-en="Stainless steel furniture, stainless steel plates, stainless steel decorative pipe processing, excellent quality, suitable for various building decoration uses">不锈钢家具、不锈钢板材、不锈钢装饰管加工，品质优良，适合各类建筑装饰使用</p>
+                        <ul class="text-secondary space-y-1 mb-4">
+                            <li><i class="fa fa-check text-primary mr-2"></i> <span data-zh="优质不锈钢材质" data-en="High-quality stainless steel material">优质不锈钢材质</span></li>
+                            <li><i class="fa fa-check text-primary mr-2"></i> <span data-zh="多种规格可选" data-en="Multiple specifications available">多种规格可选</span></li>
+                            <li><i class="fa fa-check text-primary mr-2"></i> <span data-zh="耐腐蚀设计" data-en="Corrosion-resistant design">耐腐蚀设计</span></li>
+                            <li><i class="fa fa-check text-primary mr-2"></i> <span data-zh="支持定制化" data-en="Support customization">支持定制化</span></li>
                         </ul>
                         <a href="#contact" class="text-primary hover:text-primary/80 transition-colors font-medium" data-zh="了解更多" data-en="Learn More">了解更多 <i class="fa fa-arrow-right ml-1"></i></a>
                     </div>
@@ -200,7 +225,7 @@
                         <i class="fa fa-industry"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-2" data-zh="专业生产经验" data-en="Professional Production Experience">专业生产经验</h3>
-                    <p class="text-secondary" data-zh="成立于2014年，拥有10年以上的门窗加工经验，专业的生产团队和设备" data-en="Founded in 2014, with more than 10 years of door and window processing experience, professional production team and equipment">成立于2014年，拥有10年以上的门窗加工经验，专业的生产团队和设备</p>
+                    <p class="text-secondary" data-zh="成立于2014年，拥有10年以上的门窗加工经验，专业的生产团队和设备，是本地规模以上企业" data-en="Founded in 2014, with more than 10 years of door and window processing experience, professional production team and equipment, it is a local large-scale enterprise">成立于2014年，拥有10年以上的门窗加工经验，专业的生产团队和设备，是本地规模以上企业</p>
                 </div>
                 <!-- Advantage 2 -->
                 <div class="text-center animate-scale-in" style="animation-delay: 0.2s">
@@ -208,7 +233,7 @@
                         <i class="fa fa-shield"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-2" data-zh="优质产品质量" data-en="High-Quality Products">优质产品质量</h3>
-                    <p class="text-secondary" data-zh="严格的质量控制体系，产品符合国际标准，提供10年质保服务" data-en="Strict quality control system, products meet international standards, providing 10-year warranty service">严格的质量控制体系，产品符合国际标准，提供10年质保服务</p>
+                    <p class="text-secondary" data-zh="严格的质量控制体系，产品符合国际标准，提供10年质保服务，拥有2个有效的行政许可认证" data-en="Strict quality control system, products meet international standards, providing 10-year warranty service, with 2 valid administrative license certifications">严格的质量控制体系，产品符合国际标准，提供10年质保服务，拥有2个有效的行政许可认证</p>
                 </div>
                 <!-- Advantage 3 -->
                 <div class="text-center animate-scale-in" style="animation-delay: 0.4s">
@@ -216,7 +241,7 @@
                         <i class="fa fa-globe"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-2" data-zh="外贸服务支持" data-en="Foreign Trade Service Support">外贸服务支持</h3>
-                    <p class="text-secondary" data-zh="对接本地外贸公司，提供代工、贴牌、代理出口等多种合作模式，支持全球物流" data-en="Cooperate with local foreign trade companies, provide OEM, ODM, agent export and other cooperation modes, support global logistics">对接本地外贸公司，提供代工、贴牌、代理出口等多种合作模式，支持全球物流</p>
+                    <p class="text-secondary" data-zh="对接本地外贸公司，提供代工、贴牌、代理出口等多种合作模式，支持全球物流，可申请外贸扶持政策" data-en="Cooperate with local foreign trade companies, provide OEM, ODM, agent export and other cooperation modes, support global logistics, can apply for foreign trade support policies">对接本地外贸公司，提供代工、贴牌、代理出口等多种合作模式，支持全球物流，可申请外贸扶持政策</p>
                 </div>
                 <!-- Advantage 4 -->
                 <div class="text-center animate-scale-in" style="animation-delay: 0.6s">
@@ -224,7 +249,7 @@
                         <i class="fa fa-handshake-o"></i>
                     </div>
                     <h3 class="text-xl font-bold mb-2" data-zh="定制化服务" data-en="Customized Services">定制化服务</h3>
-                    <p class="text-secondary" data-zh="根据客户需求提供个性化定制服务，满足不同建筑场景的门窗需求" data-en="Provide personalized customized services according to customer needs, meeting door and window requirements for different building scenarios">根据客户需求提供个性化定制服务，满足不同建筑场景的门窗需求</p>
+                    <p class="text-secondary" data-zh="根据客户需求提供个性化定制服务，满足不同建筑场景的门窗需求，支持外贸小批量定制，快速打样" data-en="Provide personalized customized services according to customer needs, meeting door and window requirements for different building scenarios, supporting small-batch foreign trade customization, quick prototyping">根据客户需求提供个性化定制服务，满足不同建筑场景的门窗需求，支持外贸小批量定制，快速打样</p>
                 </div>
             </div>
         </div>
@@ -240,7 +265,7 @@
                     <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="商业建筑门窗案例" class="w-full h-60 object-cover">
                     <div class="p-4 bg-dark text-white">
                         <h3 class="font-bold" data-zh="商业建筑门窗案例" data-en="Commercial Building Case">商业建筑门窗案例</h3>
-                        <p class="text-sm opacity-80" data-zh="某商业中心铝合金门窗项目" data-en="Aluminum alloy door and window project of a commercial center">某商业中心铝合金门窗项目</p>
+                        <p class="text-sm opacity-80" data-zh="某商业中心铝合金门窗项目，使用面积5000平方米，获得客户好评" data-en="Aluminum alloy door and window project of a commercial center, with an area of 5000 square meters, well received by customers">某商业中心铝合金门窗项目，使用面积5000平方米，获得客户好评</p>
                     </div>
                 </div>
                 <!-- Case 2 -->
@@ -248,7 +273,7 @@
                     <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="住宅门窗案例" class="w-full h-60 object-cover">
                     <div class="p-4 bg-dark text-white">
                         <h3 class="font-bold" data-zh="住宅门窗案例" data-en="Residential Case">住宅门窗案例</h3>
-                        <p class="text-sm opacity-80" data-zh="某小区断桥铝门窗项目" data-en="Broken-bridge aluminum door and window project of a residential community">某小区断桥铝门窗项目</p>
+                        <p class="text-sm opacity-80" data-zh="某小区断桥铝门窗项目，2000户家庭使用，节能效果显著" data-en="Broken-bridge aluminum door and window project of a residential community, used by 2000 households, with significant energy-saving effects">某小区断桥铝门窗项目，2000户家庭使用，节能效果显著</p>
                     </div>
                 </div>
                 <!-- Case 3 -->
@@ -256,7 +281,7 @@
                     <img src="https://images.unsplash.com/photo-1597836231366-38645d0c5026?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="别墅门窗案例" class="w-full h-60 object-cover">
                     <div class="p-4 bg-dark text-white">
                         <h3 class="font-bold" data-zh="别墅门窗案例" data-en="Villa Case">别墅门窗案例</h3>
-                        <p class="text-sm opacity-80" data-zh="某高端别墅定制门窗项目" data-en="Customized door and window project of a high-end villa">某高端别墅定制门窗项目</p>
+                        <p class="text-sm opacity-80" data-zh="某高端别墅定制门窗项目，个性化设计，满足客户独特需求" data-en="Customized door and window project of a high-end villa, personalized design, meeting customer's unique needs">某高端别墅定制门窗项目，个性化设计，满足客户独特需求</p>
                     </div>
                 </div>
             </div>
@@ -271,9 +296,9 @@
                 <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="公司工厂" class="w-full md:w-1/2 rounded-xl shadow-lg animate-scale-in">
                 <div class="md:w-1/2 animate-slide-up">
                     <h3 class="text-2xl font-bold mb-4" data-zh="凤台县赵中伍门窗加工有限公司" data-en="Fengtai County Zhaozhongwu Door and Window Processing Co., Ltd.">凤台县赵中伍门窗加工有限公司</h3>
-                    <p class="text-secondary mb-4" data-zh="成立于2014年，位于安徽省淮南市，是一家以从事金属制品业为主的企业，注册资本200万人民币。" data-en="Founded in 2014, located in Huainan City, Anhui Province, it is an enterprise mainly engaged in metal products industry with a registered capital of 2 million RMB.">成立于2014年，位于安徽省淮南市，是一家以从事金属制品业为主的企业，注册资本200万人民币。</p>
-                    <p class="text-secondary mb-4" data-zh="公司专注于金属门窗加工，拥有专业的生产设备和技术团队，产品质量可靠，获得了相关行政许可认证。" data-en="The company focuses on metal door and window processing, has professional production equipment and technical team, reliable product quality, and has obtained relevant administrative license certification.">公司专注于金属门窗加工，拥有专业的生产设备和技术团队，产品质量可靠，获得了相关行政许可认证。</p>
-                    <p class="text-secondary mb-4" data-zh="我们致力于为客户提供优质的门窗产品和解决方案，目前正在拓展外贸业务，将优质的门窗产品推向全球市场。" data-en="We are committed to providing customers with high-quality door and window products and solutions, and are currently expanding foreign trade business to promote high-quality door and window products to the global market.">我们致力于为客户提供优质的门窗产品和解决方案，目前正在拓展外贸业务，将优质的门窗产品推向全球市场。</p>
+                    <p class="text-secondary mb-4" data-zh="成立于2014年4月16日，位于安徽省淮南市凤台县关店乡赵埔村东埔，是一家以从事金属制品业为主的企业，注册资本200万人民币，是本地规模以上企业。" data-en="Founded on April 16, 2014, located in Zhaopu Village, Guandian Township, Fengtai County, Huainan City, Anhui Province, it is an enterprise mainly engaged in metal products industry with a registered capital of 2 million RMB, and is a local large-scale enterprise.">成立于2014年4月16日，位于安徽省淮南市凤台县关店乡赵埔村东埔，是一家以从事金属制品业为主的企业，注册资本200万人民币，是本地规模以上企业。</p>
+                    <p class="text-secondary mb-4" data-zh="公司专注于金属门窗加工，拥有专业的生产设备和技术团队，产品质量可靠，获得了2个有效的行政许可认证，纳税人信用级别为A级（2021年、2023年），是本地门窗加工行业的正规企业。" data-en="The company focuses on metal door and window processing, has professional production equipment and technical team, reliable product quality, and has obtained 2 valid administrative license certifications, with taxpayer credit level A (2021, 2023), which is a formal enterprise in the local door and window processing industry.">公司专注于金属门窗加工，拥有专业的生产设备和技术团队，产品质量可靠，获得了2个有效的行政许可认证，纳税人信用级别为A级（2021年、2023年），是本地门窗加工行业的正规企业。</p>
+                    <p class="text-secondary mb-4" data-zh="我们致力于为客户提供优质的门窗产品和解决方案，目前正在拓展外贸业务，通过对接本地外贸公司、入驻跨境电商平台、参加国际展会等方式，将优质的门窗产品推向全球市场。" data-en="We are committed to providing customers with high-quality door and window products and solutions, and are currently expanding foreign trade business to promote high-quality door and window products to the global market through cooperating with local foreign trade companies, entering cross-border e-commerce platforms, and participating in international exhibitions.">我们致力于为客户提供优质的门窗产品和解决方案，目前正在拓展外贸业务，通过对接本地外贸公司、入驻跨境电商平台、参加国际展会等方式，将优质的门窗产品推向全球市场。</p>
                     <div class="flex flex-wrap gap-4 mt-6">
                         <div class="flex items-center">
                             <i class="fa fa-check-circle text-primary mr-2"></i>
@@ -281,7 +306,7 @@
                         </div>
                         <div class="flex items-center">
                             <i class="fa fa-check-circle text-primary mr-2"></i>
-                            <span class="text-secondary" data-zh="ISO质量认证" data-en="ISO quality certification">ISO质量认证</span>
+                            <span class="text-secondary" data-zh="A级纳税人信用" data-en="Level A taxpayer credit">A级纳税人信用</span>
                         </div>
                         <div class="flex items-center">
                             <i class="fa fa-check-circle text-primary mr-2"></i>
@@ -290,6 +315,14 @@
                         <div class="flex items-center">
                             <i class="fa fa-check-circle text-primary mr-2"></i>
                             <span class="text-secondary" data-zh="全球物流支持" data-en="Global logistics support">全球物流支持</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa fa-check-circle text-primary mr-2"></i>
+                            <span class="text-secondary" data-zh="2个行政许可" data-en="2 administrative licenses">2个行政许可</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa fa-check-circle text-primary mr-2"></i>
+                            <span class="text-secondary" data-zh="规模以上企业" data-en="Large-scale enterprise">规模以上企业</span>
                         </div>
                     </div>
                 </div>
@@ -301,22 +334,69 @@
     <section id="export" class="py-20 bg-white">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 animate-slide-up" data-zh="外贸业务" data-en="Foreign Trade">外贸业务</h2>
-            <div class="max-w-3xl mx-auto bg-neutral rounded-xl shadow-lg p-8 animate-scale-in">
-                <h3 class="text-2xl font-bold mb-4" data-zh="外贸拓展计划" data-en="Foreign Trade Development Plan">外贸拓展计划</h3>
-                <p class="text-secondary mb-4" data-zh="公司正在拓展外贸业务，通过对接本地外贸公司、入驻跨境电商平台、参加国际展会等方式，将产品推向全球市场。" data-en="The company is expanding foreign trade business, and will promote products to the global market through cooperating with local foreign trade companies, entering cross-border e-commerce platforms, and participating in international exhibitions.">公司正在拓展外贸业务，通过对接本地外贸公司、入驻跨境电商平台、参加国际展会等方式，将产品推向全球市场。</p>
-                <p class="text-secondary mb-4" data-zh="我们可以提供以下合作模式：" data-en="We can provide the following cooperation modes:">我们可以提供以下合作模式：</p>
-                <ul class="text-secondary space-y-2 mb-6 pl-6">
-                    <li><i class="fa fa-angle-right text-primary mr-2"></i> <span data-zh="代工生产：为外贸公司代工生产门窗产品，贴外贸公司的品牌" data-en="OEM Production: Produce door and window products for foreign trade companies, with foreign trade companies' brands">代工生产：为外贸公司代工生产门窗产品，贴外贸公司的品牌</span></li>
-                    <li><i class="fa fa-angle-right text-primary mr-2"></i> <span data-zh="贴牌合作：使用外贸公司的品牌生产门窗产品" data-en="ODM Cooperation: Produce door and window products using foreign trade companies' brands">贴牌合作：使用外贸公司的品牌生产门窗产品</span></li>
-                    <li><i class="fa fa-angle-right text-primary mr-2"></i> <span data-zh="代理出口：将企业的门窗产品委托给外贸公司代理出口" data-en="Agent Export: Entrust the company's door and window products to foreign trade companies for export">代理出口：将企业的门窗产品委托给外贸公司代理出口</span></li>
-                </ul>
-                <h3 class="text-xl font-bold mb-2" data-zh="合作优势" data-en="Cooperation Advantages">合作优势</h3>
-                <ul class="text-secondary space-y-1 pl-6">
-                    <li><i class="fa fa-check text-primary mr-2"></i> <span data-zh="优质的产品质量，符合国际标准" data-en="High-quality products that meet international standards">优质的产品质量，符合国际标准</span></li>
-                    <li><i class="fa fa-check text-primary mr-2"></i> <span data-zh="灵活的合作模式，满足不同需求" data-en="Flexible cooperation modes to meet different needs">灵活的合作模式，满足不同需求</span></li>
-                    <li><i class="fa fa-check text-primary mr-2"></i> <span data-zh="完善的物流支持，通过铁海联运降低运输成本" data-en="Complete logistics support, reducing transportation costs through rail-sea intermodal transport">完善的物流支持，通过铁海联运降低运输成本</span></li>
-                    <li><i class="fa fa-check text-primary mr-2"></i> <span data-zh="专业的服务团队，提供全程外贸支持" data-en="Professional service team to provide full foreign trade support">专业的服务团队，提供全程外贸支持</span></li>
-                </ul>
+            <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Export Plan Card -->
+                <div class="export-card bg-neutral rounded-xl shadow-lg p-6 animate-scale-in">
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <i class="fa fa-road text-primary mr-2"></i>
+                        <span data-zh="外贸拓展计划" data-en="Foreign Trade Development Plan">外贸拓展计划</span>
+                    </h3>
+                    <p class="text-secondary mb-4" data-zh="公司正在拓展外贸业务，通过对接本地外贸公司、入驻跨境电商平台、参加国际展会等方式，将产品推向全球市场。" data-en="The company is expanding foreign trade business, and will promote products to the global market through cooperating with local foreign trade companies, entering cross-border e-commerce platforms, and participating in international exhibitions.">公司正在拓展外贸业务，通过对接本地外贸公司、入驻跨境电商平台、参加国际展会等方式，将产品推向全球市场。</p>
+                    <ul class="text-secondary space-y-2 pl-6">
+                        <li><i class="fa fa-angle-right text-primary mr-2"></i> <span data-zh="短期（1-3个月）：对接本地外贸服务资源，完成外贸基础筹备，申请本地外贸扶持政策，对接铁海联运物流体系，开展间接外贸" data-en="Short-term (1-3 months): Connect with local foreign trade service resources, complete basic foreign trade preparation, apply for local foreign trade support policies, connect with rail-sea intermodal logistics system, and carry out indirect foreign trade">短期（1-3个月）：对接本地外贸服务资源，完成外贸基础筹备，申请本地外贸扶持政策，对接铁海联运物流体系，开展间接外贸</span></li>
+                        <li><i class="fa fa-angle-right text-primary mr-2"></i> <span data-zh="中期（3-12个月）：参加境外展会，实现订单突破，建设外贸团队，优化供应链，拓展间接外贸规模" data-en="Medium-term (3-12 months): Participate in overseas exhibitions, achieve order breakthroughs, build foreign trade teams, optimize supply chains, and expand indirect foreign trade scale">中期（3-12个月）：参加境外展会，实现订单突破，建设外贸团队，优化供应链，拓展间接外贸规模</span></li>
+                        <li><i class="fa fa-angle-right text-primary mr-2"></i> <span data-zh="长期（1-3年）：拓展欧洲、北美高端市场，建立海外仓，打造自主品牌，实现规模化发展" data-en="Long-term (1-3 years): Expand to European and North American high-end markets, establish overseas warehouses, build independent brands, and achieve large-scale development">长期（1-3年）：拓展欧洲、北美高端市场，建立海外仓，打造自主品牌，实现规模化发展</span></li>
+                    </ul>
+                </div>
+                <!-- Cooperation Modes Card -->
+                <div class="export-card bg-neutral rounded-xl shadow-lg p-6 animate-scale-in" style="animation-delay: 0.2s">
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <i class="fa fa-handshake-o text-primary mr-2"></i>
+                        <span data-zh="合作模式" data-en="Cooperation Modes">合作模式</span>
+                    </h3>
+                    <ul class="text-secondary space-y-3 pl-6">
+                        <li>
+                            <div class="font-medium text-dark" data-zh="代工生产" data-en="OEM Production">代工生产</div>
+                            <p class="text-sm text-secondary mt-1" data-zh="为外贸公司代工生产门窗产品，贴外贸公司的品牌" data-en="Produce door and window products for foreign trade companies, with foreign trade companies' brands">为外贸公司代工生产门窗产品，贴外贸公司的品牌</p>
+                        </li>
+                        <li>
+                            <div class="font-medium text-dark" data-zh="贴牌合作" data-en="ODM Cooperation">贴牌合作</div>
+                            <p class="text-sm text-secondary mt-1" data-zh="使用外贸公司的品牌生产门窗产品" data-en="Produce door and window products using foreign trade companies' brands">使用外贸公司的品牌生产门窗产品</p>
+                        </li>
+                        <li>
+                            <div class="font-medium text-dark" data-zh="代理出口" data-en="Agent Export">代理出口</div>
+                            <p class="text-sm text-secondary mt-1" data-zh="将企业的门窗产品委托给外贸公司代理出口" data-en="Entrust the company's door and window products to foreign trade companies for export">将企业的门窗产品委托给外贸公司代理出口</p>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Risk Prevention Card -->
+                <div class="export-card bg-neutral rounded-xl shadow-lg p-6 animate-scale-in" style="animation-delay: 0.4s">
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <i class="fa fa-shield text-primary mr-2"></i>
+                        <span data-zh="风险防控措施" data-en="Risk Prevention Measures">风险防控措施</span>
+                    </h3>
+                    <ul class="text-secondary space-y-2 pl-6">
+                        <li><i class="fa fa-check text-primary mr-2"></i> <span data-zh="信用风险：使用出口信用保险，对海外客户进行背景调查" data-en="Credit risk: Use export credit insurance and conduct background checks on overseas customers">信用风险：使用出口信用保险，对海外客户进行背景调查</span></li>
+                        <li><i class="fa fa-check text-primary mr-2"></i> <span data-zh="政策风险：关注国际政策变化，及时调整产品和生产流程" data-en="Policy risk: Pay attention to international policy changes and adjust products and production processes in a timely manner">政策风险：关注国际政策变化，及时调整产品和生产流程</span></li>
+                        <li><i class="fa fa-check text-primary mr-2"></i> <span data-zh="物流风险：与铁海联运运营方签订长期合作协议，购买货物运输保险" data-en="Logistics risk: Sign long-term cooperation agreements with rail-sea intermodal operators and purchase cargo transportation insurance">物流风险：与铁海联运运营方签订长期合作协议，购买货物运输保险</span></li>
+                        <li><i class="fa fa-check text-primary mr-2"></i> <span data-zh="市场风险：实现市场多元化，定期分析海外市场需求变化" data-en="Market risk: Achieve market diversification and regularly analyze changes in overseas market demand">市场风险：实现市场多元化，定期分析海外市场需求变化</span></li>
+                        <li><i class="fa fa-check text-primary mr-2"></i> <span data-zh="间接外贸风险：与外贸公司签订正式协议，明确双方权利义务" data-en="Indirect foreign trade risk: Sign formal agreements with foreign trade companies to clarify rights and obligations of both parties">间接外贸风险：与外贸公司签订正式协议，明确双方权利义务</span></li>
+                    </ul>
+                </div>
+                <!-- Cooperation Advantages Card -->
+                <div class="export-card bg-neutral rounded-xl shadow-lg p-6 animate-scale-in" style="animation-delay: 0.6s">
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <i class="fa fa-star text-primary mr-2"></i>
+                        <span data-zh="合作优势" data-en="Cooperation Advantages">合作优势</span>
+                    </h3>
+                    <ul class="text-secondary space-y-2 pl-6">
+                        <li><i class="fa fa-check text-primary mr-2"></i> <span data-zh="优质的产品质量，符合国际标准" data-en="High-quality products that meet international standards">优质的产品质量，符合国际标准</span></li>
+                        <li><i class="fa fa-check text-primary mr-2"></i> <span data-zh="灵活的合作模式，满足不同需求" data-en="Flexible cooperation modes to meet different needs">灵活的合作模式，满足不同需求</span></li>
+                        <li><i class="fa fa-check text-primary mr-2"></i> <span data-zh="完善的物流支持，通过铁海联运降低运输成本" data-en="Complete logistics support, reducing transportation costs through rail-sea intermodal transport">完善的物流支持，通过铁海联运降低运输成本</span></li>
+                        <li><i class="fa fa-check text-primary mr-2"></i> <span data-zh="专业的服务团队，提供全程外贸支持" data-en="Professional service team to provide full foreign trade support">专业的服务团队，提供全程外贸支持</span></li>
+                        <li><i class="fa fa-check text-primary mr-2"></i> <span data-zh="可申请本地外贸扶持政策，降低外贸成本" data-en="Can apply for local foreign trade support policies to reduce foreign trade costs">可申请本地外贸扶持政策，降低外贸成本</span></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -331,19 +411,38 @@
                     <div class="space-y-4">
                         <div class="flex items-start">
                             <i class="fa fa-map-marker text-primary text-xl mt-1 mr-4"></i>
-                            <p data-zh="安徽省淮南市凤台县" data-en="Fengtai County, Huainan City, Anhui Province, China">安徽省淮南市凤台县</p>
+                            <div>
+                                <p class="font-medium" data-zh="公司地址" data-en="Company Address">公司地址</p>
+                                <p data-zh="安徽省淮南市凤台县关店乡赵埔村东埔" data-en="Zhaopu Village, Guandian Township, Fengtai County, Huainan City, Anhui Province, China">安徽省淮南市凤台县关店乡赵埔村东埔</p>
+                            </div>
                         </div>
                         <div class="flex items-center">
                             <i class="fa fa-phone text-primary text-xl mr-4"></i>
-                            <p data-zh="13XXXXXXXXX（请替换为实际电话）" data-en="+86 13XXXXXXXXX (Please replace with actual phone number)">13XXXXXXXXX（请替换为实际电话）</p>
+                            <div>
+                                <p class="font-medium" data-zh="联系电话" data-en="Phone Number">联系电话</p>
+                                <p data-zh="15955475126" data-en="+86 15955475126">15955475126</p>
+                            </div>
                         </div>
                         <div class="flex items-center">
                             <i class="fa fa-envelope text-primary text-xl mr-4"></i>
-                            <p data-zh="zhaozhongwu@example.com（请替换为实际邮箱）" data-en="zhaozhongwu@example.com (Please replace with actual email)">zhaozhongwu@example.com（请替换为实际邮箱）</p>
+                            <div>
+                                <p class="font-medium" data-zh="电子邮箱" data-en="Email Address">电子邮箱</p>
+                                <p data-zh="27899114857@qq.com" data-en="27899114857@qq.com">27899114857@qq.com</p>
+                            </div>
                         </div>
                         <div class="flex items-center">
                             <i class="fa fa-clock-o text-primary text-xl mr-4"></i>
-                            <p data-zh="周一至周五 8:00-18:00" data-en="Monday to Friday 8:00-18:00 (GMT+8)">周一至周五 8:00-18:00</p>
+                            <div>
+                                <p class="font-medium" data-zh="营业时间" data-en="Business Hours">营业时间</p>
+                                <p data-zh="周一至周五 8:00-18:00" data-en="Monday to Friday 8:00-18:00 (GMT+8)">周一至周五 8:00-18:00</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start mt-6">
+                            <i class="fa fa-building text-primary text-xl mt-1 mr-4"></i>
+                            <div>
+                                <p class="font-medium" data-zh="淮南市外贸综合服务中心" data-en="Huainan Foreign Trade Comprehensive Service Center">淮南市外贸综合服务中心</p>
+                                <p class="text-sm opacity-80" data-zh="提供一站式外贸服务：报检通关、收汇结汇、出口信保" data-en="Provide one-stop foreign trade services: inspection and customs clearance, foreign exchange settlement, export credit insurance">提供一站式外贸服务：报检通关、收汇结汇、出口信保</p>
+                            </div>
                         </div>
                     </div>
                     <div class="mt-8">
@@ -363,27 +462,29 @@
                 </div>
                 <div class="animate-scale-in" style="animation-delay: 0.2s">
                     <h3 class="text-2xl font-bold mb-6" data-zh="在线咨询" data-en="Online Consultation">在线咨询</h3>
-                    <form class="space-y-4">
+                    <form action="https://formspree.io/f/your-form-id" method="POST" class="space-y-4">
                         <div>
                             <label class="block text-gray-300 mb-2" for="name" data-zh="姓名" data-en="Name">姓名</label>
-                            <input type="text" id="name" class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" placeholder="请输入您的姓名" data-zh="请输入您的姓名" data-en="Please enter your name">
+                            <input type="text" id="name" name="name" class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" placeholder="请输入您的姓名" data-zh="请输入您的姓名" data-en="Please enter your name">
                         </div>
                         <div>
                             <label class="block text-gray-300 mb-2" for="email" data-zh="邮箱" data-en="Email">邮箱</label>
-                            <input type="email" id="email" class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" placeholder="请输入您的邮箱" data-zh="请输入您的邮箱" data-en="Please enter your email">
+                            <input type="email" id="email" name="email" class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" placeholder="请输入您的邮箱" data-zh="请输入您的邮箱" data-en="Please enter your email">
                         </div>
                         <div>
                             <label class="block text-gray-300 mb-2" for="product" data-zh="产品类型" data-en="Product Type">产品类型</label>
-                            <select id="product" class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                            <select id="product" name="product" class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
                                 <option value="" data-zh="请选择产品类型" data-en="Please select product type">请选择产品类型</option>
                                 <option value="aluminum" data-zh="铝合金门窗" data-en="Aluminum Alloy Doors & Windows">铝合金门窗</option>
                                 <option value="broken-bridge" data-zh="断桥铝门窗" data-en="Broken-Bridge Aluminum Doors & Windows">断桥铝门窗</option>
                                 <option value="custom" data-zh="定制门窗" data-en="Custom Doors & Windows">定制门窗</option>
+                                <option value="stainless" data-zh="不锈钢制品" data-en="Stainless Steel Products">不锈钢制品</option>
+                                <option value="export" data-zh="外贸合作" data-en="Foreign Trade Cooperation">外贸合作</option>
                             </select>
                         </div>
                         <div>
                             <label class="block text-gray-300 mb-2" for="message" data-zh="留言" data-en="Message">留言</label>
-                            <textarea id="message" rows="4" class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" placeholder="请输入您的留言" data-zh="请输入您的留言" data-en="Please enter your message"></textarea>
+                            <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" placeholder="请输入您的留言" data-zh="请输入您的留言" data-en="Please enter your message"></textarea>
                         </div>
                         <button type="submit" class="bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-lg transition-colors w-full" data-zh="提交留言" data-en="Submit Message">提交留言</button>
                     </form>
@@ -396,7 +497,7 @@
     <footer class="bg-gray-900 text-gray-400 py-8">
         <div class="container mx-auto px-4 text-center">
             <p data-zh="© 2026 凤台县赵中伍门窗加工有限公司 版权所有" data-en="© 2026 Fengtai County Zhaozhongwu Door and Window Processing Co., Ltd. All rights reserved.">© 2026 凤台县赵中伍门窗加工有限公司 版权所有</p>
-            <p class="mt-2" data-zh="专业门窗加工，品质铸就未来" data-en="Professional door and window processing, quality builds the future">专业门窗加工，品质铸就未来</p>
+            <p class="mt-2" data-zh="专业门窗加工，品质铸就未来 | 本网站支持GitHub Pages免费托管，全球CDN加速，海外访问速度快，适合外贸拓展。" data-en="Professional door and window processing, quality builds the future | This website supports free hosting on GitHub Pages, with global CDN acceleration, fast overseas access speed, suitable for foreign trade expansion.">专业门窗加工，品质铸就未来 | 本网站支持GitHub Pages免费托管，全球CDN加速，海外访问速度快，适合外贸拓展。</p>
         </div>
     </footer>
 
