@@ -3,44 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>安徽凤台县赵中伍门窗加工有限公司 - 专业金属门窗加工</title>
+    <title>安徽省凤台县赵中伍门窗加工有限公司 - 专业不锈钢制品定制加工|外贸配套服务</title>
+    <meta name="description" content="凤台县赵中伍门窗加工，坐落于凤台县关店乡，专注不锈钢门窗、围栏、货架、厨柜、岗亭等全品类不锈钢制品定制，覆盖食品、餐饮、医疗、市政等多行业，支持来样定制、非标加工，提供一站式外贸配套服务，本地源头厂家，品质保障。">
+    <meta name="keywords" content="凤台不锈钢加工,淮南不锈钢定制,关店乡不锈钢厂,不锈钢围栏,不锈钢层架,不锈钢门窗,不锈钢岗亭,不锈钢制品外贸加工,食品级不锈钢定制">
+    <!-- 引入Tailwind CSS，无需本地安装 -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- 引入Font Awesome图标 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- 自定义Tailwind配置 -->
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        primary: '#165DFF',
-                        secondary: '#6B7280',
-                        accent: '#F59E0B',
-                        neutral: '#F9FAFB',
-                        dark: '#1F2937',
-                        metal: '#9CA3AF',
+                        primary: '#15803d', // 工业风深绿色，贴合不锈钢行业稳重质感
+                        secondary: '#475569',
+                        light: '#f8fafc',
                     },
                     fontFamily: {
-                        sans: ['Inter', 'Microsoft YaHei', 'Arial', 'sans-serif'],
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
                     },
-                    animation: {
-                        'fade-in': 'fadeIn 0.8s ease-in-out',
-                        'slide-up': 'slideUp 0.6s ease-out',
-                        'scale-in': 'scaleIn 0.5s ease-out',
-                    },
-                    keyframes: {
-                        fadeIn: {
-                            '0%': { opacity: '0' },
-                            '100%': { opacity: '1' },
-                        },
-                        slideUp: {
-                            '0%': { opacity: '0', transform: 'translateY(20px)' },
-                            '100%': { opacity: '1', transform: 'translateY(0)' },
-                        },
-                        scaleIn: {
-                            '0%': { opacity: '0', transform: 'scale(0.9)' },
-                            '100%': { opacity: '1', transform: 'scale(1)' },
-                        },
-                    },
-                },
+                }
             }
         }
     </script>
@@ -49,591 +32,672 @@
             .content-auto {
                 content-visibility: auto;
             }
-            .hero-bg {
-                background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
-                background-size: cover;
-                background-position: center;
-                background-attachment: fixed;
+            .scroll-smooth {
+                scroll-behavior: smooth;
             }
-            .product-card:hover {
-                transform: translateY(-5px);
-                transition: all 0.3s ease;
+            .text-shadow {
+                text-shadow: 0 2px 4px rgba(0,0,0,0.5);
             }
-            .feature-icon {
-                color: #165DFF;
-                font-size: 2.5rem;
-                margin-bottom: 1rem;
-            }
-            .case-card {
-                overflow: hidden;
-            }
-            .case-card img {
-                transition: transform 0.5s ease;
-            }
-            .case-card:hover img {
-                transform: scale(1.1);
-            }
-            .lang-switch {
-                cursor: pointer;
-                transition: all 0.3s ease;
-            }
-            .lang-switch:hover {
-                transform: scale(1.1);
-            }
-            .export-card {
-                transition: all 0.3s ease;
-            }
-            .export-card:hover {
-                transform: translateY(-3px);
-                box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            .video-aspect {
+                aspect-ratio: 16/9;
             }
         }
     </style>
 </head>
-<body class="font-sans bg-neutral text-dark">
-    <!-- Navigation Bar -->
-    <nav class="bg-white shadow-lg fixed w-full top-0 z-50 transition-all duration-300" id="navbar">
-        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-            <div class="flex items-center">
-                <i class="fa fa-building-o text-primary text-2xl mr-2"></i>
-                <span class="text-xl font-bold text-primary" data-zh="安徽赵中伍门窗加工" data-en="Anhui Zhaozhongwu Doors & Windows">安徽赵中伍门窗加工</span>
-            </div>
-            <div class="hidden md:flex space-x-8">
-                <a href="#home" class="text-dark hover:text-primary transition-colors font-medium" data-zh="首页" data-en="Home">首页</a>
-                <a href="#products" class="text-dark hover:text-primary transition-colors font-medium" data-zh="产品展示" data-en="Products">产品展示</a>
-                <a href="#features" class="text-dark hover:text-primary transition-colors font-medium" data-zh="公司优势" data-en="Advantages">公司优势</a>
-                <a href="#cases" class="text-dark hover:text-primary transition-colors font-medium" data-zh="案例展示" data-en="Cases">案例展示</a>
-                <a href="#about" class="text-dark hover:text-primary transition-colors font-medium" data-zh="公司介绍" data-en="About Us">公司介绍</a>
-                <a href="#export" class="text-dark hover:text-primary transition-colors font-medium" data-zh="外贸业务" data-en="Foreign Trade">外贸业务</a>
-                <a href="#contact" class="bg-primary text-white px-5 py-2 rounded-lg hover:bg-primary/90 transition-colors font-medium" data-zh="联系我们" data-en="Contact Us">联系我们</a>
-                <div class="lang-switch text-primary font-medium flex items-center" id="langSwitch">
-                    <span data-zh="English" data-en="中文">English</span>
-                </div>
-            </div>
-            <div class="flex md:hidden items-center space-x-4">
-                <div class="lang-switch text-primary font-medium" id="mobileLangSwitch">
-                    <span data-zh="English" data-en="中文">English</span>
-                </div>
-                <button class="text-dark" id="menuBtn">
-                    <i class="fa fa-bars text-xl"></i>
+<body class="bg-gray-50 font-sans text-gray-800 scroll-smooth">
+    <!-- 固定顶部导航栏（新增产品视频入口） -->
+    <header id="navbar" class="fixed w-full top-0 z-50 bg-white/95 shadow-md transition-all duration-300">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- 品牌名称 -->
+                <a href="#home" class="flex items-center">
+                    <h1 class="text-xl md:text-2xl font-bold text-primary">赵中伍不锈钢加工</h1>
+                </a>
+
+                <!-- 桌面端导航菜单（新增产品视频） -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-primary font-medium transition-colors">首页</a>
+                    <a href="#about" class="text-gray-700 hover:text-primary font-medium transition-colors">关于我们</a>
+                    <a href="#products" class="text-gray-700 hover:text-primary font-medium transition-colors">产品中心</a>
+                    <a href="#videos" class="text-gray-700 hover:text-primary font-medium transition-colors">产品视频</a>
+                    <a href="#factory" class="text-gray-700 hover:text-primary font-medium transition-colors">工厂实力</a>
+                    <a href="#service" class="text-gray-700 hover:text-primary font-medium transition-colors">服务范围</a>
+                    <a href="#contact" class="text-gray-700 hover:text-primary font-medium transition-colors">联系我们</a>
+                </nav>
+
+                <!-- 移动端菜单按钮 -->
+                <button id="menuBtn" class="md:hidden text-gray-700 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
                 </button>
             </div>
         </div>
-        <!-- Mobile Menu -->
-        <div class="md:hidden hidden bg-white w-full shadow-md" id="mobileMenu">
-            <div class="container mx-auto px-4 py-2 flex flex-col space-y-3">
-                <a href="#home" class="text-dark hover:text-primary transition-colors py-2 font-medium" data-zh="首页" data-en="Home">首页</a>
-                <a href="#products" class="text-dark hover:text-primary transition-colors py-2 font-medium" data-zh="产品展示" data-en="Products">产品展示</a>
-                <a href="#features" class="text-dark hover:text-primary transition-colors py-2 font-medium" data-zh="公司优势" data-en="Advantages">公司优势</a>
-                <a href="#cases" class="text-dark hover:text-primary transition-colors py-2 font-medium" data-zh="案例展示" data-en="Cases">案例展示</a>
-                <a href="#about" class="text-dark hover:text-primary transition-colors py-2 font-medium" data-zh="公司介绍" data-en="About Us">公司介绍</a>
-                <a href="#export" class="text-dark hover:text-primary transition-colors py-2 font-medium" data-zh="外贸业务" data-en="Foreign Trade">外贸业务</a>
-                <a href="#contact" class="bg-primary text-white px-5 py-2 rounded-lg hover:bg-primary/90 transition-colors font-medium text-center" data-zh="联系我们" data-en="Contact Us">联系我们</a>
+
+        <!-- 移动端下拉菜单（同步新增产品视频） -->
+        <div id="mobileMenu" class="md:hidden hidden bg-white border-t border-gray-200">
+            <div class="container mx-auto px-4 py-3 flex flex-col space-y-3">
+                <a href="#home" class="py-2 text-gray-700 hover:text-primary font-medium">首页</a>
+                <a href="#about" class="py-2 text-gray-700 hover:text-primary font-medium">关于我们</a>
+                <a href="#products" class="py-2 text-gray-700 hover:text-primary font-medium">产品中心</a>
+                <a href="#videos" class="py-2 text-gray-700 hover:text-primary font-medium">产品视频</a>
+                <a href="#factory" class="py-2 text-gray-700 hover:text-primary font-medium">工厂实力</a>
+                <a href="#service" class="py-2 text-gray-700 hover:text-primary font-medium">服务范围</a>
+                <a href="#contact" class="py-2 text-gray-700 hover:text-primary font-medium">联系我们</a>
             </div>
         </div>
-    </nav>
+    </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero-bg h-screen flex items-center justify-center pt-16">
-        <div class="text-white text-center max-w-3xl px-4 animate-fade-in">
-            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight" data-zh="专业金属门窗加工，<br>品质铸就未来" data-en="Professional Metal Door & Window Processing,<br>Quality Builds the Future">专业金属门窗加工，<br>品质铸就未来</h1>
-            <p class="text-lg md:text-xl mb-8 opacity-90" data-zh="安徽凤台县赵中伍门窗加工有限公司，专注铝合金、断桥铝门窗加工，为您提供优质的门窗解决方案，支持外贸代工、贴牌、代理出口等多种合作模式" data-en="Anhui Fengtai County Zhaozhongwu Door and Window Processing Co., Ltd., specializing in aluminum alloy and broken-bridge aluminum door and window processing, providing you with high-quality door and window solutions, supporting OEM, ODM, agent export and other cooperation modes">安徽凤台县赵中伍门窗加工有限公司，专注铝合金、断桥铝门窗加工，为您提供优质的门窗解决方案，支持外贸代工、贴牌、代理出口等多种合作模式</p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="#products" class="bg-white text-primary px-8 py-3 rounded-lg hover:bg-gray-100 transition-colors font-medium" data-zh="查看产品" data-en="View Products">查看产品</a>
-                <a href="#contact" class="bg-primary text-white px-8 py-3 rounded-lg hover:bg-primary/90 transition-colors font-medium" data-zh="获取报价" data-en="Get Quote">获取报价</a>
+    <!-- 首屏Hero区 -->
+    <section id="home" class="pt-16 min-h-[90vh] flex items-center relative bg-gray-900">
+        <!-- 背景图（可替换为你的工厂/产品大图） -->
+        <div class="absolute inset-0 z-0 opacity-50">
+            <img src="https://picsum.photos/id/1059/1920/1080" alt="不锈钢加工工厂" class="w-full h-full object-cover" loading="lazy">
+        </div>
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-20">
+            <div class="max-w-3xl">
+                <h2 class="text-[clamp(2rem,5vw,4rem)] font-bold text-white text-shadow leading-tight mb-6">
+                    专注不锈钢制品定制<br>一站式加工+外贸全链条服务
+                </h2>
+                <p class="text-[clamp(1rem,2vw,1.25rem)] text-gray-100 mb-8 max-w-2xl">
+                    安徽省凤台县赵中伍门窗加工有限公司，深耕不锈钢加工行业，服务食品、餐饮、医疗、宾馆、家具、市政工程等全行业，支持来样定制、非标设计，配套一站式外贸服务，源头厂家直供，品质与效率双重保障。
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#products" class="bg-primary hover:bg-green-800 text-white px-8 py-3 rounded-lg font-medium transition-all duration-300 shadow-lg hover:shadow-xl">
+                        查看产品
+                    </a>
+                    <a href="#contact" class="bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border border-white/30 px-8 py-3 rounded-lg font-medium transition-all duration-300">
+                        联系定制
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Products Section -->
-    <section id="products" class="py-20 bg-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 animate-slide-up" data-zh="产品展示" data-en="Products">产品展示</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Product 1 -->
-                <div class="product-card bg-neutral rounded-xl shadow-lg overflow-hidden animate-scale-in">
-                    <img src="https://images.unsplash.com/photo-1597836231366-38645d0c5026?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="铝合金门窗" class="w-full h-56 object-cover">
+    <!-- 关于我们板块 -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-gray-900 mb-4">关于我们</h2>
+                <div class="w-20 h-1 bg-primary mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">安徽省凤台县赵中伍门窗加工有限公司</h3>
+                    <p class="text-gray-600 mb-4 leading-relaxed">
+                        我们是一家集设计、加工、定制、安装、外贸配套于一体的不锈钢制品专业厂家，工厂坐落于安徽省淮南市凤台县关店乡，拥有多年行业加工经验与成熟的生产工艺，自有标准化加工车间与专业设备。
+                    </p>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        专注不锈钢门窗与各类不锈钢制品生产，产品广泛应用于食品、餐饮、医疗、宾馆、家具、市政工程等多个行业，可根据客户需求提供来样定制、非标设计加工服务，从图纸到成品，一站式满足您的所有需求，同时配套一站式外贸服务，助力产品出海。
+                    </p>
+                    
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-6">
+                        <div class="bg-gray-50 p-4 rounded-lg text-center">
+                            <i class="fas fa-industry text-primary text-3xl mb-2"></i>
+                            <p class="font-medium">源头厂家</p>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg text-center">
+                            <i class="fas fa-pen-ruler text-primary text-3xl mb-2"></i>
+                            <p class="font-medium">来样定制</p>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg text-center">
+                            <i class="fas fa-ship text-primary text-3xl mb-2"></i>
+                            <p class="font-medium">外贸配套</p>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg text-center">
+                            <i class="fas fa-shield-halved text-primary text-3xl mb-2"></i>
+                            <p class="font-medium">品质保障</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rounded-2xl overflow-hidden shadow-xl">
+                    <!-- 可直接替换为工厂大门/车间全景实拍图 -->
+                    <img src="https://picsum.photos/id/1067/800/600" alt="工厂全景实拍" class="w-full h-full object-cover" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 产品中心板块 -->
+    <section id="products" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-gray-900 mb-4">产品中心</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">全品类不锈钢制品加工，支持非标定制，满足不同行业、不同场景的使用需求</p>
+                <div class="w-20 h-1 bg-primary mx-auto rounded-full mt-4"></div>
+            </div>
+
+            <!-- 产品分类网格 -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- 产品卡片1：不锈钢厨柜/厨房设备 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group border border-gray-100">
+                    <div class="h-60 overflow-hidden">
+                        <img src="./assets/images/不锈钢厨柜.jpg" alt="不锈钢厨柜" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                    </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2" data-zh="铝合金门窗" data-en="Aluminum Alloy Doors & Windows">铝合金门窗</h3>
-                        <p class="text-secondary mb-4" data-zh="坚固耐用，隔音隔热，适合各类建筑使用，具有良好的耐腐蚀性和密封性，符合国际标准" data-en="Durable, soundproof and heat-insulating, suitable for various buildings, with good corrosion resistance and sealing performance, meeting international standards">坚固耐用，隔音隔热，适合各类建筑使用，具有良好的耐腐蚀性和密封性，符合国际标准</p>
-                        <ul class="text-secondary space-y-1 mb-4">
-                            <li><i class="fa fa-check text-primary mr-2"></i> <span data-zh="优质铝合金材质" data-en="High-quality aluminum alloy material">优质铝合金材质</span></li>
-                            <li><i class="fa fa-check text-primary mr-2"></i> <span data-zh="隔音隔热设计" data-en="Soundproof and heat-insulating design">隔音隔热设计</span></li>
-                            <li><i class="fa fa-check text-primary mr-2"></i> <span data-zh="多种颜色可选" data-en="Multiple colors available">多种颜色可选</span></li>
-                            <li><i class="fa fa-check text-primary mr-2"></i> <span data-zh="支持定制化" data-en="Support customization">支持定制化</span></li>
-                        </ul>
-                        <a href="#contact" class="text-primary hover:text-primary/80 transition-colors font-medium" data-zh="了解更多" data-en="Learn More">了解更多 <i class="fa fa-arrow-right ml-1"></i></a>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">家用商用不锈钢厨柜</h3>
+                        <p class="text-gray-600 mb-4">304不锈钢整体厨柜、转角柜，防水防潮防腐蚀，适配家庭厨房、餐饮后厨，支持尺寸定制。</p>
                     </div>
                 </div>
-                <!-- Product 2 -->
-                <div class="product-card bg-neutral rounded-xl shadow-lg overflow-hidden animate-scale-in" style="animation-delay: 0.2s">
-                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="断桥铝门窗" class="w-full h-56 object-cover">
+
+                <!-- 产品卡片2：不锈钢岗亭 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group border border-gray-100">
+                    <div class="h-60 overflow-hidden">
+                        <img src="./assets/images/不锈钢岗亭.jpg" alt="不锈钢岗亭" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                    </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2" data-zh="断桥铝门窗" data-en="Broken-Bridge Aluminum Doors & Windows">断桥铝门窗</h3>
-                        <p class="text-secondary mb-4" data-zh="节能保温，密封性好，适合高端建筑使用，有效降低能源消耗，符合欧盟CE标准" data-en="Energy-saving and heat-preserving, good sealing performance, suitable for high-end buildings, effectively reducing energy consumption, meeting EU CE standards">节能保温，密封性好，适合高端建筑使用，有效降低能源消耗，符合欧盟CE标准</p>
-                        <ul class="text-secondary space-y-1 mb-4">
-                            <li><i class="fa fa-check text-primary mr-2"></i> <span data-zh="断桥隔热设计" data-en="Broken-bridge heat insulation design">断桥隔热设计</span></li>
-                            <li><i class="fa fa-check text-primary mr-2"></i> <span data-zh="优异的保温性能" data-en="Excellent heat preservation performance">优异的保温性能</span></li>
-                            <li><i class="fa fa-check text-primary mr-2"></i> <span data-zh="高品质五金配件" data-en="High-quality hardware accessories">高品质五金配件</span></li>
-                            <li><i class="fa fa-check text-primary mr-2"></i> <span data-zh="10年质保服务" data-en="10-year warranty service">10年质保服务</span></li>
-                        </ul>
-                        <a href="#contact" class="text-primary hover:text-primary/80 transition-colors font-medium" data-zh="了解更多" data-en="Learn More">了解更多 <i class="fa fa-arrow-right ml-1"></i></a>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">不锈钢岗亭</h3>
+                        <p class="text-gray-600 mb-4">保安岗亭、收费亭、值班亭，坚固耐用，防风防雨，支持尺寸、户型定制，适用于小区、园区、工地等场景。</p>
                     </div>
                 </div>
-                <!-- Product 3 -->
-                <div class="product-card bg-neutral rounded-xl shadow-lg overflow-hidden animate-scale-in" style="animation-delay: 0.4s">
-                    <img src="https://images.unsplash.com/photo-1581092173398-308f2182f3dd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="定制门窗" class="w-full h-56 object-cover">
+
+                <!-- 产品卡片3：不锈钢手推车 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group border border-gray-100">
+                    <div class="h-60 overflow-hidden">
+                        <img src="./assets/images/不锈钢手推车.jpg" alt="不锈钢手推车" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                    </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2" data-zh="定制门窗" data-en="Custom Doors & Windows">定制门窗</h3>
-                        <p class="text-secondary mb-4" data-zh="根据客户需求定制，满足个性化设计要求，适用于特殊建筑场景，支持外贸小批量定制" data-en="Customized according to customer needs, meeting personalized design requirements, suitable for special building scenarios, supporting small-batch foreign trade customization">根据客户需求定制，满足个性化设计要求，适用于特殊建筑场景，支持外贸小批量定制</p>
-                        <ul class="text-secondary space-y-1 mb-4">
-                            <li><i class="fa fa-check text-primary mr-2"></i> <span data-zh="个性化设计" data-en="Personalized design">个性化设计</span></li>
-                            <li><i class="fa fa-check text-primary mr-2"></i> <span data-zh="精准尺寸定制" data-en="Precise size customization">精准尺寸定制</span></li>
-                            <li><i class="fa fa-check text-primary mr-2"></i> <span data-zh="专属解决方案" data-en="Exclusive solutions">专属解决方案</span></li>
-                            <li><i class="fa fa-check text-primary mr-2"></i> <span data-zh="快速打样服务" data-en="Quick prototyping service">快速打样服务</span></li>
-                        </ul>
-                        <a href="#contact" class="text-primary hover:text-primary/80 transition-colors font-medium" data-zh="了解更多" data-en="Learn More">了解更多 <i class="fa fa-arrow-right ml-1"></i></a>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">不锈钢手推车</h3>
+                        <p class="text-gray-600 mb-4">多层商用手推车、餐车、工具车，静音万向轮，承重强，适配餐饮、医疗、车间、仓库等场景。</p>
                     </div>
                 </div>
-                <!-- Product 4 -->
-                <div class="product-card bg-neutral rounded-xl shadow-lg overflow-hidden animate-scale-in" style="animation-delay: 0.6s">
-                    <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="不锈钢制品" class="w-full h-56 object-cover">
+
+                <!-- 产品卡片4：商用厨房设备 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group border border-gray-100">
+                    <div class="h-60 overflow-hidden">
+                        <img src="./assets/images/厨房油烟罩.jpg" alt="厨房油烟罩" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                    </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold mb-2" data-zh="不锈钢制品" data-en="Stainless Steel Products">不锈钢制品</h3>
-                        <p class="text-secondary mb-4" data-zh="不锈钢家具、不锈钢板材、不锈钢装饰管加工，品质优良，适合各类建筑装饰使用" data-en="Stainless steel furniture, stainless steel plates, stainless steel decorative pipe processing, excellent quality, suitable for various building decoration uses">不锈钢家具、不锈钢板材、不锈钢装饰管加工，品质优良，适合各类建筑装饰使用</p>
-                        <ul class="text-secondary space-y-1 mb-4">
-                            <li><i class="fa fa-check text-primary mr-2"></i> <span data-zh="优质不锈钢材质" data-en="High-quality stainless steel material">优质不锈钢材质</span></li>
-                            <li><i class="fa fa-check text-primary mr-2"></i> <span data-zh="多种规格可选" data-en="Multiple specifications available">多种规格可选</span></li>
-                            <li><i class="fa fa-check text-primary mr-2"></i> <span data-zh="耐腐蚀设计" data-en="Corrosion-resistant design">耐腐蚀设计</span></li>
-                            <li><i class="fa fa-check text-primary mr-2"></i> <span data-zh="支持定制化" data-en="Support customization">支持定制化</span></li>
-                        </ul>
-                        <a href="#contact" class="text-primary hover:text-primary/80 transition-colors font-medium" data-zh="了解更多" data-en="Learn More">了解更多 <i class="fa fa-arrow-right ml-1"></i></a>
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">商用厨房不锈钢设备</h3>
+                        <p class="text-gray-600 mb-4">油烟罩、水池、操作台、小吃车等餐饮后厨设备，食品级304不锈钢，支持后厨整体定制。</p>
+                    </div>
+                </div>
+
+                <!-- 产品卡片5：不锈钢仓储/货架 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group border border-gray-100">
+                    <div class="h-60 overflow-hidden">
+                        <img src="./assets/images/食品厂冷冻食品的架子.jpg" alt="不锈钢货架" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">不锈钢仓储货架/柜子</h3>
+                        <p class="text-gray-600 mb-4">食品厂冷冻货架、储物柜、文件柜、工具箱，防潮防锈，承重性强，支持非标尺寸定制。</p>
+                    </div>
+                </div>
+
+                <!-- 产品卡片6：市政/工程配套制品 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group border border-gray-100">
+                    <div class="h-60 overflow-hidden">
+                        <img src="./assets/images/不锈钢广告牌.jpg" alt="不锈钢广告牌" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">市政工程不锈钢制品</h3>
+                        <p class="text-gray-600 mb-4">宣传栏、广告牌、地沟板、护栏等，户外耐候性强，支持工程批量定制。</p>
+                    </div>
+                </div>
+
+                <!-- 产品卡片7：不锈钢庭院围栏/护栏 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group border border-gray-100">
+                    <div class="h-60 overflow-hidden">
+                        <img src="./assets/images/不锈钢庭院围栏.jpg" alt="不锈钢庭院围栏" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">不锈钢庭院围栏/护栏</h3>
+                        <p class="text-gray-600 mb-4">欧式不锈钢庭院围栏、院墙护栏、阳台栏杆，防锈耐用，款式可定制，适配自建房、别墅、厂区围墙。</p>
+                    </div>
+                </div>
+
+                <!-- 产品卡片8：不锈钢烘干层架/推车 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group border border-gray-100">
+                    <div class="h-60 overflow-hidden">
+                        <img src="./assets/images/不锈钢手推车.jpg" alt="不锈钢烘干层架推车" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">不锈钢烘干层架/推车</h3>
+                        <p class="text-gray-600 mb-4">食品厂烘干架、冷冻层架、移动推车，食品级不锈钢材质，层数、尺寸可定制，适配食品加工、冷链仓储场景。</p>
+                    </div>
+                </div>
+
+                <!-- 客户定制产品卡片 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group lg:col-span-3 border border-gray-100">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">非标定制产品合集</h3>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                            <img src="./assets/images/客户定制01.jpg" alt="客户定制产品" class="rounded-lg w-full h-48 object-cover" loading="lazy">
+                            <img src="./assets/images/客户定制02.jpg" alt="客户定制产品" class="rounded-lg w-full h-48 object-cover" loading="lazy">
+                            <img src="./assets/images/客户定制03.jpg" alt="客户定制产品" class="rounded-lg w-full h-48 object-cover" loading="lazy">
+                            <img src="./assets/images/地沟板.jpg" alt="不锈钢地沟板" class="rounded-lg w-full h-48 object-cover" loading="lazy">
+                        </div>
+                        <p class="text-gray-600 mt-4">收割机油箱、不锈钢漏斗、异形件、设备外壳等各类非标不锈钢制品，均可来图、来样定制，满足您的个性化需求。</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Company Advantages Section -->
-    <section id="features" class="py-20 bg-neutral">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 animate-slide-up" data-zh="公司优势" data-en="Company Advantages">公司优势</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Advantage 1 -->
-                <div class="text-center animate-scale-in">
-                    <div class="feature-icon">
-                        <i class="fa fa-industry"></i>
+    <!-- 新增：产品视频展示板块（核心嵌入区域） -->
+    <section id="videos" class="py-20 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-gray-900 mb-4">产品视频展示</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">实拍产品细节与成品效果，直观感受定制加工工艺与品质</p>
+                <div class="w-20 h-1 bg-primary mx-auto rounded-full mt-4"></div>
+            </div>
+
+            <!-- 视频网格布局，响应式适配 -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- 视频卡片1：不锈钢小吃车 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group border border-gray-100">
+                    <div class="bg-gray-100 overflow-hidden">
+                        <video 
+                            class="w-full video-aspect object-cover" 
+                            src="./assets/videos/不锈钢小吃车.mp4" 
+                            controls 
+                            preload="metadata"
+                            playsinline
+                            webkit-playsinline
+                            x5-playsinline>
+                            您的浏览器不支持视频播放，请升级浏览器
+                        </video>
                     </div>
-                    <h3 class="text-xl font-bold mb-2" data-zh="专业生产经验" data-en="Professional Production Experience">专业生产经验</h3>
-                    <p class="text-secondary" data-zh="成立于2014年，拥有10年以上的门窗加工经验，专业的生产团队和设备，是本地规模以上企业" data-en="Founded in 2014, with more than 10 years of door and window processing experience, professional production team and equipment, it is a local large-scale enterprise">成立于2014年，拥有10年以上的门窗加工经验，专业的生产团队和设备，是本地规模以上企业</p>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">不锈钢小吃车</h3>
+                        <p class="text-gray-600">商用移动小吃车、摆摊餐车，按需定制尺寸与功能，食品级不锈钢材质，坚固耐用。</p>
+                    </div>
                 </div>
-                <!-- Advantage 2 -->
-                <div class="text-center animate-scale-in" style="animation-delay: 0.2s">
-                    <div class="feature-icon">
-                        <i class="fa fa-shield"></i>
+
+                <!-- 视频卡片2：院子围栏 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group border border-gray-100">
+                    <div class="bg-gray-100 overflow-hidden">
+                        <video 
+                            class="w-full video-aspect object-cover" 
+                            src="./assets/videos/院子围栏.mp4" 
+                            controls 
+                            preload="metadata"
+                            playsinline
+                            webkit-playsinline
+                            x5-playsinline>
+                            您的浏览器不支持视频播放，请升级浏览器
+                        </video>
                     </div>
-                    <h3 class="text-xl font-bold mb-2" data-zh="优质产品质量" data-en="High-Quality Products">优质产品质量</h3>
-                    <p class="text-secondary" data-zh="严格的质量控制体系，产品符合国际标准，提供10年质保服务，拥有2个有效的行政许可认证" data-en="Strict quality control system, products meet international standards, providing 10-year warranty service, with 2 valid administrative license certifications">严格的质量控制体系，产品符合国际标准，提供10年质保服务，拥有2个有效的行政许可认证</p>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">不锈钢院子围栏</h3>
+                        <p class="text-gray-600">庭院/厂区不锈钢围栏、护栏，款式可定制，焊接牢固，防锈防腐，户外耐用性强。</p>
+                    </div>
                 </div>
-                <!-- Advantage 3 -->
-                <div class="text-center animate-scale-in" style="animation-delay: 0.4s">
-                    <div class="feature-icon">
-                        <i class="fa fa-globe"></i>
+
+                <!-- 视频卡片3：不锈钢水池 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group border border-gray-100">
+                    <div class="bg-gray-100 overflow-hidden">
+                        <video 
+                            class="w-full video-aspect object-cover" 
+                            src="./assets/videos/不锈钢水池.mp4" 
+                            controls 
+                            preload="metadata"
+                            playsinline
+                            webkit-playsinline
+                            x5-playsinline>
+                            您的浏览器不支持视频播放，请升级浏览器
+                        </video>
                     </div>
-                    <h3 class="text-xl font-bold mb-2" data-zh="外贸服务支持" data-en="Foreign Trade Service Support">外贸服务支持</h3>
-                    <p class="text-secondary" data-zh="对接本地外贸公司，提供代工、贴牌、代理出口等多种合作模式，支持全球物流，可申请外贸扶持政策" data-en="Cooperate with local foreign trade companies, provide OEM, ODM, agent export and other cooperation modes, support global logistics, can apply for foreign trade support policies">对接本地外贸公司，提供代工、贴牌、代理出口等多种合作模式，支持全球物流，可申请外贸扶持政策</p>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">不锈钢水池</h3>
+                        <p class="text-gray-600">商用/家用不锈钢洗手池、洗菜池、后厨水池，单槽/双槽/多槽均可定制，食品级材质。</p>
+                    </div>
                 </div>
-                <!-- Advantage 4 -->
-                <div class="text-center animate-scale-in" style="animation-delay: 0.6s">
-                    <div class="feature-icon">
-                        <i class="fa fa-handshake-o"></i>
+
+                <!-- 视频卡片4：不锈钢工具箱 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group border border-gray-100">
+                    <div class="bg-gray-100 overflow-hidden">
+                        <video 
+                            class="w-full video-aspect object-cover" 
+                            src="./assets/videos/不锈钢工具箱.mp4" 
+                            controls 
+                            preload="metadata"
+                            playsinline
+                            webkit-playsinline
+                            x5-playsinline>
+                            您的浏览器不支持视频播放，请升级浏览器
+                        </video>
                     </div>
-                    <h3 class="text-xl font-bold mb-2" data-zh="定制化服务" data-en="Customized Services">定制化服务</h3>
-                    <p class="text-secondary" data-zh="根据客户需求提供个性化定制服务，满足不同建筑场景的门窗需求，支持外贸小批量定制，快速打样" data-en="Provide personalized customized services according to customer needs, meeting door and window requirements for different building scenarios, supporting small-batch foreign trade customization, quick prototyping">根据客户需求提供个性化定制服务，满足不同建筑场景的门窗需求，支持外贸小批量定制，快速打样</p>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">不锈钢工具箱</h3>
+                        <p class="text-gray-600">工业级不锈钢工具箱、储物柜，防水防尘，承重性强，适配车间、户外、车载多场景。</p>
+                    </div>
+                </div>
+
+                <!-- 视频卡片5：不锈钢漏斗 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group border border-gray-100">
+                    <div class="bg-gray-100 overflow-hidden">
+                        <video 
+                            class="w-full video-aspect object-cover" 
+                            src="./assets/videos/不锈钢漏斗.mp4" 
+                            controls 
+                            preload="metadata"
+                            playsinline
+                            webkit-playsinline
+                            x5-playsinline>
+                            您的浏览器不支持视频播放，请升级浏览器
+                        </video>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">不锈钢漏斗</h3>
+                        <p class="text-gray-600">食品/工业用不锈钢漏斗、异形下料口，尺寸、口径、形状均可非标定制，无缝焊接。</p>
+                    </div>
+                </div>
+
+                <!-- 视频卡片6：收割机油箱 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group border border-gray-100">
+                    <div class="bg-gray-100 overflow-hidden">
+                        <video 
+                            class="w-full video-aspect object-cover" 
+                            src="./assets/videos/收割机油箱.mp4" 
+                            controls 
+                            preload="metadata"
+                            playsinline
+                            webkit-playsinline
+                            x5-playsinline>
+                            您的浏览器不支持视频播放，请升级浏览器
+                        </video>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">收割机油箱</h3>
+                        <p class="text-gray-600">农机配套不锈钢油箱、储液罐，非标定制，防漏防腐，适配各类农机设备、工业设备。</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Cases Section -->
-    <section id="cases" class="py-20 bg-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 animate-slide-up" data-zh="案例展示" data-en="Case Show">案例展示</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Case 1 -->
-                <div class="case-card rounded-xl overflow-hidden shadow-lg animate-scale-in">
-                    <img src="https://p3-flow-sign.byteimg.com/tos-cn-i-ik7evvg4ik/rc/supertask/6e24d16e80c84c1e80d0c58c025147ae?lk3s=8e244e95&rcl=20260305144600DBCBC793E2DFEE88755E&rrcfp=68002718&x-expires=2088053340&x-signature=wiUmNXAtLrwSJUuWK%2F9tH1ImkAc%3D" alt="大玻璃阳台案例" class="w-full h-60 object-cover">
-                    <div class="p-4 bg-dark text-white">
-                        <h3 class="font-bold" data-zh="大玻璃阳台案例" data-en="Large Glass Balcony Case">大玻璃阳台案例</h3>
-                        <p class="text-sm opacity-80" data-zh="6.3米宽阳台，使用12+12超白大玻璃，安装效果美观大气" data-en="6.3m wide balcony, using 12+12 ultra-white large glass, beautiful and atmospheric installation effect">6.3米宽阳台，使用12+12超白大玻璃，安装效果美观大气</p>
+    <!-- 工厂实力板块 -->
+    <section id="factory" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-gray-900 mb-4">工厂实力</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">标准化生产车间，专业加工设备，从源头把控产品品质与交付效率</p>
+                <div class="w-20 h-1 bg-primary mx-auto rounded-full mt-4"></div>
+            </div>
+
+            <!-- 厂房与设备展示区，预留图片位，后续上传对应图片直接替换src即可 -->
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <div class="rounded-xl overflow-hidden shadow-md group">
+                    <div class="h-72 overflow-hidden">
+                        <!-- 替换为厂房车间实拍图 -->
+                        <img src="https://picsum.photos/id/26/800/500" alt="标准化生产车间" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                    </div>
+                    <div class="p-4 bg-white text-center">
+                        <h3 class="font-bold text-lg">标准化生产车间</h3>
                     </div>
                 </div>
-                <!-- Case 2 -->
-                <div class="case-card rounded-xl overflow-hidden shadow-lg animate-scale-in" style="animation-delay: 0.2s">
-                    <img src="https://p3-flow-sign.byteimg.com/tos-cn-i-ik7evvg4ik/rc/supertask/6e24d16e80c84c1e80d0c58c025147ae?lk3s=8e244e95&rcl=20260305144600DBCBC793E2DFEE88755E&rrcfp=68002718&x-expires=2088053340&x-signature=wiUmNXAtLrwSJUuWK%2F9tH1ImkAc%3D" alt="双面3D木纹门窗案例" class="w-full h-60 object-cover">
-                    <div class="p-4 bg-dark text-white">
-                        <h3 class="font-bold" data-zh="双面3D木纹门窗案例" data-en="Double-sided 3D Wood Grain Door & Window Case">双面3D木纹门窗案例</h3>
-                        <p class="text-sm opacity-80" data-zh="110平移侧压窗，双面3D木纹效果，美观且耐用" data-en="110 sliding side pressure window, double-sided 3D wood grain effect, beautiful and durable">110平移侧压窗，双面3D木纹效果，美观且耐用</p>
+                <div class="rounded-xl overflow-hidden shadow-md group">
+                    <div class="h-72 overflow-hidden">
+                        <!-- 替换为专业加工设备实拍图 -->
+                        <img src="https://picsum.photos/id/1025/800/500" alt="专业加工设备" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                    </div>
+                    <div class="p-4 bg-white text-center">
+                        <h3 class="font-bold text-lg">专业加工设备</h3>
                     </div>
                 </div>
-                <!-- Case 3 -->
-                <div class="case-card rounded-xl overflow-hidden shadow-lg animate-scale-in" style="animation-delay: 0.4s">
-                    <img src="https://p3-flow-sign.byteimg.com/tos-cn-i-ik7evvg4ik/rc/supertask/6e24d16e80c84c1e80d0c58c025147ae?lk3s=8e244e95&rcl=20260305144600DBCBC793E2DFEE88755E&rrcfp=68002718&x-expires=2088053340&x-signature=wiUmNXAtLrwSJUuWK%2F9tH1ImkAc%3D" alt="系统窗案例" class="w-full h-60 object-cover">
-                    <div class="p-4 bg-dark text-white">
-                        <h3 class="font-bold" data-zh="系统窗安装案例" data-en="System Window Installation Case">系统窗安装案例</h3>
-                        <p class="text-sm opacity-80" data-zh="凤台县本地住宅系统窗安装，隔音隔热效果显著" data-en="System window installation for local residential buildings in Fengtai County, with significant sound and heat insulation effects">凤台县本地住宅系统窗安装，隔音隔热效果显著</p>
-                    </div>
+            </div>
+
+            <!-- 核心生产优势 -->
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all">
+                    <h4 class="font-bold text-xl text-primary mb-3">成熟加工工艺</h4>
+                    <p class="text-gray-600">多年不锈钢加工经验，焊接、折弯、打磨工艺成熟，成品精度高、质感好，适配家用、商用、工业级多场景需求。</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all">
+                    <h4 class="font-bold text-xl text-primary mb-3">全流程品控</h4>
+                    <p class="text-gray-600">从原材料选材、生产加工到成品验收，全流程严格品控，支持201/304/316等多材质定制，保障产品耐用性与安全性。</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all">
+                    <h4 class="font-bold text-xl text-primary mb-3">灵活交付能力</h4>
+                    <p class="text-gray-600">支持单件非标定制与批量工程订单，按需排产，保障交付周期，同时配套外贸全流程服务，满足国内外订单需求。</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Us Section -->
-    <section id="about" class="py-20 bg-neutral">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 animate-slide-up" data-zh="公司介绍" data-en="About Us">公司介绍</h2>
-            <div class="max-w-4xl mx-auto flex flex-col md:flex-row gap-8 items-center">
-                <img src="https://p3-flow-sign.byteimg.com/tos-cn-i-ik7evvg4ik/rc/supertask/6e24d16e80c84c1e80d0c58c025147ae?lk3s=8e244e95&rcl=20260305144600DBCBC793E2DFEE88755E&rrcfp=68002718&x-expires=2088053340&x-signature=wiUmNXAtLrwSJUuWK%2F9tH1ImkAc%3D" alt="公司工厂" class="w-full md:w-1/2 rounded-xl shadow-lg animate-scale-in">
-                <div class="md:w-1/2 animate-slide-up">
-                    <h3 class="text-2xl font-bold mb-4" data-zh="安徽凤台县赵中伍门窗加工有限公司" data-en="Anhui Fengtai County Zhaozhongwu Door and Window Processing Co., Ltd.">安徽凤台县赵中伍门窗加工有限公司</h3>
-                    <p class="text-secondary mb-4" data-zh="成立于2014年4月16日，位于安徽省淮南市凤台县关店乡赵埔村东埔，是一家以从事金属制品业为主的企业，注册资本200万人民币，是本地规模以上企业。" data-en="Founded on April 16, 2014, located in Zhaopu Village, Guandian Township, Fengtai County, Huainan City, Anhui Province, it is an enterprise mainly engaged in metal products industry with a registered capital of 2 million RMB, and is a local large-scale enterprise.">成立于2014年4月16日，位于安徽省淮南市凤台县关店乡赵埔村东埔，是一家以从事金属制品业为主的企业，注册资本200万人民币，是本地规模以上企业。</p>
-                    <p class="text-secondary mb-4" data-zh="公司专注于金属门窗加工，拥有专业的生产设备和技术团队，产品质量可靠，获得了2个有效的行政许可认证，纳税人信用级别为A级（2021年、2023年），是本地门窗加工行业的正规企业。" data-en="The company focuses on metal door and window processing, has professional production equipment and technical team, reliable product quality, and has obtained 2 valid administrative license certifications, with taxpayer credit level A (2021, 2023), which is a formal enterprise in the local door and window processing industry.">公司专注于金属门窗加工，拥有专业的生产设备和技术团队，产品质量可靠，获得了2个有效的行政许可认证，纳税人信用级别为A级（2021年、2023年），是本地门窗加工行业的正规企业。</p>
-                    <p class="text-secondary mb-4" data-zh="我们致力于为客户提供优质的门窗产品和解决方案，目前正在拓展外贸业务，通过对接本地外贸公司、入驻跨境电商平台、参加国际展会等方式，将优质的门窗产品推向全球市场。" data-en="We are committed to providing customers with high-quality door and window products and solutions, and are currently expanding foreign trade business to promote high-quality door and window products to the global market through cooperating with local foreign trade companies, entering cross-border e-commerce platforms, and participating in international exhibitions.">我们致力于为客户提供优质的门窗产品和解决方案，目前正在拓展外贸业务，通过对接本地外贸公司、入驻跨境电商平台、参加国际展会等方式，将优质的门窗产品推向全球市场。</p>
-                    <div class="flex flex-wrap gap-4 mt-6">
-                        <div class="flex items-center">
-                            <i class="fa fa-check-circle text-primary mr-2"></i>
-                            <span class="text-secondary" data-zh="10年生产经验" data-en="10 years of production experience">10年生产经验</span>
-                        </div>
-                        <div class="flex items-center">
-                            <i class="fa fa-check-circle text-primary mr-2"></i>
-                            <span class="text-secondary" data-zh="A级纳税人信用" data-en="Level A taxpayer credit">A级纳税人信用</span>
-                        </div>
-                        <div class="flex items-center">
-                            <i class="fa fa-check-circle text-primary mr-2"></i>
-                            <span class="text-secondary" data-zh="专业技术团队" data-en="Professional technical team">专业技术团队</span>
-                        </div>
-                        <div class="flex items-center">
-                            <i class="fa fa-check-circle text-primary mr-2"></i>
-                            <span class="text-secondary" data-zh="全球物流支持" data-en="Global logistics support">全球物流支持</span>
-                        </div>
-                        <div class="flex items-center">
-                            <i class="fa fa-check-circle text-primary mr-2"></i>
-                            <span class="text-secondary" data-zh="2个行政许可" data-en="2 administrative licenses">2个行政许可</span>
-                        </div>
-                        <div class="flex items-center">
-                            <i class="fa fa-check-circle text-primary mr-2"></i>
-                            <span class="text-secondary" data-zh="规模以上企业" data-en="Large-scale enterprise">规模以上企业</span>
-                        </div>
+    <!-- 服务范围板块 -->
+    <section id="service" class="py-20 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-gray-900 mb-4">服务范围</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">从需求到成品，从国内交付到外贸出海，全流程一对一服务，让定制更省心、更高效</p>
+                <div class="w-20 h-1 bg-primary mx-auto rounded-full mt-4"></div>
+            </div>
+
+            <!-- 定制服务流程 -->
+            <div class="grid md:grid-cols-4 gap-6 mb-16">
+                <div class="bg-gray-50 rounded-xl p-6 text-center hover:bg-primary hover:text-white transition-all duration-300 group shadow-sm">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-white/20">
+                        <i class="fas fa-comments text-primary text-2xl group-hover:text-white transition-colors"></i>
                     </div>
+                    <h3 class="text-lg font-bold mb-2">需求沟通</h3>
+                    <p class="text-sm group-hover:text-white/90">对接您的使用场景、尺寸、材质、功能需求，提供专业的定制建议。</p>
+                </div>
+
+                <div class="bg-gray-50 rounded-xl p-6 text-center hover:bg-primary hover:text-white transition-all duration-300 group shadow-sm">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-white/20">
+                        <i class="fas fa-pen-to-square text-primary text-2xl group-hover:text-white transition-colors"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">方案设计</h3>
+                    <p class="text-sm group-hover:text-white/90">根据需求出具加工方案与图纸，确认材质、工艺、工期与报价。</p>
+                </div>
+
+                <div class="bg-gray-50 rounded-xl p-6 text-center hover:bg-primary hover:text-white transition-all duration-300 group shadow-sm">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-white/20">
+                        <i class="fas fa-gears text-primary text-2xl group-hover:text-white transition-colors"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">生产加工</h3>
+                    <p class="text-sm group-hover:text-white/90">自有加工车间，标准化生产工艺，严格品控，保障产品品质与工期。</p>
+                </div>
+
+                <div class="bg-gray-50 rounded-xl p-6 text-center hover:bg-primary hover:text-white transition-all duration-300 group shadow-sm">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-white/20">
+                        <i class="fas fa-truck text-primary text-2xl group-hover:text-white transition-colors"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-2">交付验收</h3>
+                    <p class="text-sm group-hover:text-white/90">成品检验合格后交付，支持本地安装服务，售后无忧。</p>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Foreign Trade Section -->
-    <section id="export" class="py-20 bg-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 animate-slide-up" data-zh="外贸业务" data-en="Foreign Trade">外贸业务</h2>
-            <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
-                <!-- Export Plan Card -->
-                <div class="export-card bg-neutral rounded-xl shadow-lg p-6 animate-scale-in">
-                    <h3 class="text-xl font-bold mb-4 flex items-center">
-                        <i class="fa fa-road text-primary mr-2"></i>
-                        <span data-zh="外贸拓展计划" data-en="Foreign Trade Development Plan">外贸拓展计划</span>
-                    </h3>
-                    <p class="text-secondary mb-4" data-zh="公司正在拓展外贸业务，通过对接本地外贸公司、入驻跨境电商平台、参加国际展会等方式，将产品推向全球市场。" data-en="The company is expanding foreign trade business, and will promote products to the global market through cooperating with local foreign trade companies, entering cross-border e-commerce platforms, and participating in international exhibitions.">公司正在拓展外贸业务，通过对接本地外贸公司、入驻跨境电商平台、参加国际展会等方式，将产品推向全球市场。</p>
-                    <ul class="text-secondary space-y-2 pl-6">
-                        <li><i class="fa fa-angle-right text-primary mr-2"></i> <span data-zh="短期（1-3个月）：对接本地外贸服务资源，完成外贸基础筹备，申请本地外贸扶持政策，对接铁海联运物流体系，开展间接外贸" data-en="Short-term (1-3 months): Connect with local foreign trade service resources, complete basic foreign trade preparation, apply for local foreign trade support policies, connect with rail-sea intermodal logistics system, and carry out indirect foreign trade">短期（1-3个月）：对接本地外贸服务资源，完成外贸基础筹备，申请本地外贸扶持政策，对接铁海联运物流体系，开展间接外贸</span></li>
-                        <li><i class="fa fa-angle-right text-primary mr-2"></i> <span data-zh="中期（3-12个月）：参加境外展会，实现订单突破，建设外贸团队，优化供应链，拓展间接外贸规模" data-en="Medium-term (3-12 months): Participate in overseas exhibitions, achieve order breakthroughs, build foreign trade teams, optimize supply chains, and expand indirect foreign trade scale">中期（3-12个月）：参加境外展会，实现订单突破，建设外贸团队，优化供应链，拓展间接外贸规模</span></li>
-                        <li><i class="fa fa-angle-right text-primary mr-2"></i> <span data-zh="长期（1-3年）：拓展欧洲、北美高端市场，建立海外仓，打造自主品牌，实现规模化发展" data-en="Long-term (1-3 years): Expand to European and North American high-end markets, establish overseas warehouses, build independent brands, and achieve large-scale development">长期（1-3年）：拓展欧洲、北美高端市场，建立海外仓，打造自主品牌，实现规模化发展</span></li>
-                    </ul>
-                </div>
-                <!-- Cooperation Modes Card -->
-                <div class="export-card bg-neutral rounded-xl shadow-lg p-6 animate-scale-in" style="animation-delay: 0.2s">
-                    <h3 class="text-xl font-bold mb-4 flex items-center">
-                        <i class="fa fa-handshake-o text-primary mr-2"></i>
-                        <span data-zh="合作模式" data-en="Cooperation Modes">合作模式</span>
-                    </h3>
-                    <ul class="text-secondary space-y-3 pl-6">
-                        <li>
-                            <div class="font-medium text-dark" data-zh="代工生产" data-en="OEM Production">代工生产</div>
-                            <p class="text-sm text-secondary mt-1" data-zh="为外贸公司代工生产门窗产品，贴外贸公司的品牌" data-en="Produce door and window products for foreign trade companies, with foreign trade companies' brands">为外贸公司代工生产门窗产品，贴外贸公司的品牌</p>
-                        </li>
-                        <li>
-                            <div class="font-medium text-dark" data-zh="贴牌合作" data-en="ODM Cooperation">贴牌合作</div>
-                            <p class="text-sm text-secondary mt-1" data-zh="使用外贸公司的品牌生产门窗产品" data-en="Produce door and window products using foreign trade companies' brands">使用外贸公司的品牌生产门窗产品</p>
-                        </li>
-                        <li>
-                            <div class="font-medium text-dark" data-zh="代理出口" data-en="Agent Export">代理出口</div>
-                            <p class="text-sm text-secondary mt-1" data-zh="将企业的门窗产品委托给外贸公司代理出口" data-en="Entrust the company's door and window products to foreign trade companies for export">将企业的门窗产品委托给外贸公司代理出口</p>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Risk Prevention Card -->
-                <div class="export-card bg-neutral rounded-xl shadow-lg p-6 animate-scale-in" style="animation-delay: 0.4s">
-                    <h3 class="text-xl font-bold mb-4 flex items-center">
-                        <i class="fa fa-shield text-primary mr-2"></i>
-                        <span data-zh="风险防控措施" data-en="Risk Prevention Measures">风险防控措施</span>
-                    </h3>
-                    <ul class="text-secondary space-y-2 pl-6">
-                        <li><i class="fa fa-check text-primary mr-2"></i> <span data-zh="信用风险：使用出口信用保险，对海外客户进行背景调查" data-en="Credit risk: Use export credit insurance and conduct background checks on overseas customers">信用风险：使用出口信用保险，对海外客户进行背景调查</span></li>
-                        <li><i class="fa fa-check text-primary mr-2"></i> <span data-zh="政策风险：关注国际政策变化，及时调整产品和生产流程" data-en="Policy risk: Pay attention to international policy changes and adjust products and production processes in a timely manner">政策风险：关注国际政策变化，及时调整产品和生产流程</span></li>
-                        <li><i class="fa fa-check text-primary mr-2"></i> <span data-zh="物流风险：与铁海联运运营方签订长期合作协议，购买货物运输保险" data-en="Logistics risk: Sign long-term cooperation agreements with rail-sea intermodal operators and purchase cargo transportation insurance">物流风险：与铁海联运运营方签订长期合作协议，购买货物运输保险</span></li>
-                        <li><i class="fa fa-check text-primary mr-2"></i> <span data-zh="市场风险：实现市场多元化，定期分析海外市场需求变化" data-en="Market risk: Achieve market diversification and regularly analyze changes in overseas market demand">市场风险：实现市场多元化，定期分析海外市场需求变化</span></li>
-                        <li><i class="fa fa-check text-primary mr-2"></i> <span data-zh="间接外贸风险：与外贸公司签订正式协议，明确双方权利义务" data-en="Indirect foreign trade risk: Sign formal agreements with foreign trade companies to clarify rights and obligations of both parties">间接外贸风险：与外贸公司签订正式协议，明确双方权利义务</span></li>
-                    </ul>
-                </div>
-                <!-- Cooperation Advantages Card -->
-                <div class="export-card bg-neutral rounded-xl shadow-lg p-6 animate-scale-in" style="animation-delay: 0.6s">
-                    <h3 class="text-xl font-bold mb-4 flex items-center">
-                        <i class="fa fa-star text-primary mr-2"></i>
-                        <span data-zh="合作优势" data-en="Cooperation Advantages">合作优势</span>
-                    </h3>
-                    <ul class="text-secondary space-y-2 pl-6">
-                        <li><i class="fa fa-check text-primary mr-2"></i> <span data-zh="优质的产品质量，符合国际标准" data-en="High-quality products that meet international standards">优质的产品质量，符合国际标准</span></li>
-                        <li><i class="fa fa-check text-primary mr-2"></i> <span data-zh="灵活的合作模式，满足不同需求" data-en="Flexible cooperation modes to meet different needs">灵活的合作模式，满足不同需求</span></li>
-                        <li><i class="fa fa-check text-primary mr-2"></i> <span data-zh="完善的物流支持，通过铁海联运降低运输成本" data-en="Complete logistics support, reducing transportation costs through rail-sea intermodal transport">完善的物流支持，通过铁海联运降低运输成本</span></li>
-                        <li><i class="fa fa-check text-primary mr-2"></i> <span data-zh="专业的服务团队，提供全程外贸支持" data-en="Professional service team to provide full foreign trade support">专业的服务团队，提供全程外贸支持</span></li>
-                        <li><i class="fa fa-check text-primary mr-2"></i> <span data-zh="可申请本地外贸扶持政策，降低外贸成本" data-en="Can apply for local foreign trade support policies to reduce foreign trade costs">可申请本地外贸扶持政策，降低外贸成本</span></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Us Section -->
-    <section id="contact" class="py-20 bg-dark text-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 animate-slide-up" data-zh="联系我们" data-en="Contact Us">联系我们</h2>
-            <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="animate-scale-in">
-                    <h3 class="text-2xl font-bold mb-6" data-zh="联系方式" data-en="Contact Information">联系方式</h3>
+            <!-- 核心服务内容 -->
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-gray-50 rounded-2xl p-8 shadow-sm">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">不锈钢定制加工服务</h3>
                     <div class="space-y-4">
-                        <div class="flex items-start">
-                            <i class="fa fa-map-marker text-primary text-xl mt-1 mr-4"></i>
+                        <div class="flex items-start gap-4">
+                            <i class="fas fa-check-circle text-primary text-xl mt-1"></i>
                             <div>
-                                <p class="font-medium" data-zh="公司地址" data-en="Company Address">公司地址</p>
-                                <p data-zh="安徽省淮南市凤台县关店乡赵埔村东埔" data-en="Zhaopu Village, Guandian Township, Fengtai County, Huainan City, Anhui Province, China">安徽省淮南市凤台县关店乡赵埔村东埔</p>
+                                <h4 class="font-bold mb-1">材质可选</h4>
+                                <p class="text-gray-600">201/304/316不锈钢等多种材质可选，适配不同使用场景与行业标准。</p>
                             </div>
                         </div>
-                        <div class="flex items-center">
-                            <i class="fa fa-phone text-primary text-xl mr-4"></i>
+                        <div class="flex items-start gap-4">
+                            <i class="fas fa-check-circle text-primary text-xl mt-1"></i>
                             <div>
-                                <p class="font-medium" data-zh="联系电话" data-en="Phone Number">联系电话</p>
-                                <p data-zh="15955475126" data-en="+86 15955475126">15955475126</p>
+                                <h4 class="font-bold mb-1">全行业覆盖</h4>
+                                <p class="text-gray-600">食品、餐饮、医疗、市政、家居、工业设备等多行业产品均可定制。</p>
                             </div>
                         </div>
-                        <div class="flex items-center">
-                            <i class="fa fa-envelope text-primary text-xl mr-4"></i>
+                        <div class="flex items-start gap-4">
+                            <i class="fas fa-check-circle text-primary text-xl mt-1"></i>
                             <div>
-                                <p class="font-medium" data-zh="电子邮箱" data-en="Email Address">电子邮箱</p>
-                                <p data-zh="27899114857@qq.com" data-en="27899114857@qq.com">27899114857@qq.com</p>
+                                <h4 class="font-bold mb-1">来样/来图均可</h4>
+                                <p class="text-gray-600">无论您有图纸还是样品，我们都能精准还原，按需定制非标产品。</p>
                             </div>
                         </div>
-                        <div class="flex items-center">
-                            <i class="fa fa-clock-o text-primary text-xl mr-4"></i>
+                        <div class="flex items-start gap-4">
+                            <i class="fas fa-check-circle text-primary text-xl mt-1"></i>
                             <div>
-                                <p class="font-medium" data-zh="营业时间" data-en="Business Hours">营业时间</p>
-                                <p data-zh="周一至周五 8:00-18:00" data-en="Monday to Friday 8:00-18:00 (GMT+8)">周一至周五 8:00-18:00</p>
+                                <h4 class="font-bold mb-1">本地源头厂家</h4>
+                                <p class="text-gray-600">凤台本地工厂，无中间商差价，性价比更高，对接更便捷。</p>
                             </div>
-                        </div>
-                        <div class="flex items-start mt-6">
-                            <i class="fa fa-building text-primary text-xl mt-1 mr-4"></i>
-                            <div>
-                                <p class="font-medium" data-zh="淮南市外贸综合服务中心" data-en="Huainan Foreign Trade Comprehensive Service Center">淮南市外贸综合服务中心</p>
-                                <p class="text-sm opacity-80" data-zh="提供一站式外贸服务：报检通关、收汇结汇、出口信保" data-en="Provide one-stop foreign trade services: inspection and customs clearance, foreign exchange settlement, export credit insurance">提供一站式外贸服务：报检通关、收汇结汇、出口信保</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mt-8">
-                        <h4 class="font-bold mb-2" data-zh="关注我们" data-en="Follow Us">关注我们</h4>
-                        <div class="flex space-x-4">
-                            <a href="#" class="bg-primary/10 text-primary w-10 h-10 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
-                                <i class="fa fa-facebook"></i>
-                            </a>
-                            <a href="#" class="bg-primary/10 text-primary w-10 h-10 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
-                                <i class="fa fa-linkedin"></i>
-                            </a>
-                            <a href="#" class="bg-primary/10 text-primary w-10 h-10 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
-                                <i class="fa fa-instagram"></i>
-                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="animate-scale-in" style="animation-delay: 0.2s">
-                    <h3 class="text-2xl font-bold mb-6" data-zh="在线咨询" data-en="Online Consultation">在线咨询</h3>
-                    <form action="https://formspree.io/f/your-form-id" method="POST" class="space-y-4">
+
+                <div class="bg-gray-50 rounded-2xl p-8 shadow-sm">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">一站式外贸配套服务</h3>
+                    <p class="text-gray-600 mb-6">联合淮南市外贸综合服务中心，为外贸订单提供全链条配套服务，助力产品出海，省心省力。</p>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4">
+                            <i class="fas fa-check-circle text-primary text-xl mt-1"></i>
+                            <div>
+                                <h4 class="font-bold mb-1">报检通关服务</h4>
+                                <p class="text-gray-600">专业团队对接，提供标准化的出口报检、通关全流程服务，保障订单顺利出海。</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <i class="fas fa-check-circle text-primary text-xl mt-1"></i>
+                            <div>
+                                <h4 class="font-bold mb-1">收汇结汇服务</h4>
+                                <p class="text-gray-600">合规高效的收汇结汇解决方案，保障外贸资金安全、快速到账。</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <i class="fas fa-check-circle text-primary text-xl mt-1"></i>
+                            <div>
+                                <h4 class="font-bold mb-1">出口信保服务</h4>
+                                <p class="text-gray-600">提供出口信用保险配套，降低外贸订单风险，保障企业收汇安全。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系我们板块 -->
+    <section id="contact" class="py-20 bg-gray-900 text-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold mb-4">联系我们</h2>
+                <p class="text-gray-300 max-w-2xl mx-auto">欢迎来电咨询、来厂考察，我们将为您提供专业的不锈钢制品解决方案</p>
+                <div class="w-20 h-1 bg-primary mx-auto rounded-full mt-4"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center shrink-0">
+                                <i class="fas fa-building text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-1">公司名称</h4>
+                                <p class="text-gray-300">安徽省凤台县赵中伍门窗加工有限公司</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center shrink-0">
+                                <i class="fas fa-phone text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-1">联系电话</h4>
+                                <p class="text-gray-300">15955475126（微信同号）</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center shrink-0">
+                                <i class="fas fa-envelope text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-1">电子邮箱</h4>
+                                <p class="text-gray-300">27899114857@qq.com</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center shrink-0">
+                                <i class="fas fa-location-dot text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-1">工厂地址</h4>
+                                <p class="text-gray-300">安徽省淮南市凤台县关店乡赵埔村东埔</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center shrink-0">
+                                <i class="fas fa-clock text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-1">营业时间</h4>
+                                <p class="text-gray-300">周一至周五 8:00-18:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-8">
+                    <h3 class="text-xl font-bold mb-6">在线咨询</h3>
+                    <form class="space-y-4">
                         <div>
-                            <label class="block text-gray-300 mb-2" for="name" data-zh="姓名" data-en="Name">姓名</label>
-                            <input type="text" id="name" name="name" class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" placeholder="请输入您的姓名" data-zh="请输入您的姓名" data-en="Please enter your name">
+                            <label class="block text-gray-300 mb-2 text-sm">您的姓名</label>
+                            <input type="text" class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors" placeholder="请输入您的姓名">
                         </div>
                         <div>
-                            <label class="block text-gray-300 mb-2" for="phone" data-zh="联系电话" data-en="Phone Number">联系电话</label>
-                            <input type="tel" id="phone" name="phone" class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" placeholder="请输入您的联系电话" data-zh="请输入您的联系电话" data-en="Please enter your phone number">
+                            <label class="block text-gray-300 mb-2 text-sm">联系电话</label>
+                            <input type="tel" class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors" placeholder="请输入您的联系电话">
                         </div>
                         <div>
-                            <label class="block text-gray-300 mb-2" for="email" data-zh="邮箱" data-en="Email">邮箱</label>
-                            <input type="email" id="email" name="email" class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" placeholder="请输入您的邮箱" data-zh="请输入您的邮箱" data-en="Please enter your email">
+                            <label class="block text-gray-300 mb-2 text-sm">定制需求</label>
+                            <textarea rows="4" class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors" placeholder="请描述您需要的产品、材质、尺寸等定制需求"></textarea>
                         </div>
-                        <div>
-                            <label class="block text-gray-300 mb-2" for="product" data-zh="产品类型" data-en="Product Type">产品类型</label>
-                            <select id="product" name="product" class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
-                                <option value="" data-zh="请选择产品类型" data-en="Please select product type">请选择产品类型</option>
-                                <option value="aluminum" data-zh="铝合金门窗" data-en="Aluminum Alloy Doors & Windows">铝合金门窗</option>
-                                <option value="broken-bridge" data-zh="断桥铝门窗" data-en="Broken-Bridge Aluminum Doors & Windows">断桥铝门窗</option>
-                                <option value="custom" data-zh="定制门窗" data-en="Custom Doors & Windows">定制门窗</option>
-                                <option value="stainless" data-zh="不锈钢制品" data-en="Stainless Steel Products">不锈钢制品</option>
-                                <option value="export" data-zh="外贸合作" data-en="Foreign Trade Cooperation">外贸合作</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label class="block text-gray-300 mb-2" for="message" data-zh="留言" data-en="Message">留言</label>
-                            <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" placeholder="请输入您的留言" data-zh="请输入您的留言" data-en="Please enter your message"></textarea>
-                        </div>
-                        <button type="submit" class="bg-primary hover:bg-primary/90 text-white px-6 py-3 rounded-lg transition-colors w-full" data-zh="提交留言" data-en="Submit Message">提交留言</button>
+                        <button type="button" class="w-full bg-primary hover:bg-green-800 text-white font-medium py-3 rounded-lg transition-colors">
+                            提交咨询
+                        </button>
                     </form>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-400 py-8">
-        <div class="container mx-auto px-4 text-center">
-            <p data-zh="© 2026 安徽凤台县赵中伍门窗加工有限公司 版权所有" data-en="© 2026 Anhui Fengtai County Zhaozhongwu Door and Window Processing Co., Ltd. All rights reserved.">© 2026 安徽凤台县赵中伍门窗加工有限公司 版权所有</p>
-            <p class="mt-2" data-zh="专业门窗加工，品质铸就未来" data-en="Professional door and window processing, quality builds the future">专业门窗加工，品质铸就未来</p>
+    <!-- 页脚 -->
+    <footer class="bg-gray-950 text-gray-400 py-8">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <p>© 2026 安徽省凤台县赵中伍门窗加工有限公司 版权所有</p>
+                <p class="mt-2 text-sm">联系电话：15955475126 | 专业不锈钢制品定制加工 | 一站式外贸配套服务</p>
+            </div>
         </div>
     </footer>
 
+    <!-- 移动端菜单JS -->
     <script>
-        // Language Switch Function
-        let currentLang = 'zh';
-
-        // Get user's preferred language from localStorage or browser
-        function getPreferredLanguage() {
-            const savedLang = localStorage.getItem('preferredLang');
-            if (savedLang) {
-                return savedLang;
-            }
-            // Check browser language
-            const browserLang = navigator.language || navigator.userLanguage;
-            if (browserLang.startsWith('zh')) {
-                return 'zh';
-            } else {
-                return 'en';
-            }
-        }
-
-        // Switch language
-        function switchLanguage(lang) {
-            currentLang = lang;
-            localStorage.setItem('preferredLang', lang);
-            
-            // Update all elements with data-zh and data-en attributes
-            document.querySelectorAll('[data-zh][data-en]').forEach(element => {
-                const zhText = element.getAttribute('data-zh');
-                const enText = element.getAttribute('data-en');
-                if (lang === 'zh') {
-                    element.innerHTML = zhText;
-                    document.documentElement.lang = 'zh-CN';
-                } else {
-                    element.innerHTML = enText;
-                    document.documentElement.lang = 'en';
-                }
-            });
-
-            // Update placeholder attributes
-            document.querySelectorAll('[placeholder][data-zh][data-en]').forEach(input => {
-                const zhPlaceholder = input.getAttribute('data-zh');
-                const enPlaceholder = input.getAttribute('data-en');
-                if (lang === 'zh') {
-                    input.placeholder = zhPlaceholder;
-                } else {
-                    input.placeholder = enPlaceholder;
-                }
-            });
-
-            // Update option text
-            document.querySelectorAll('option[data-zh][data-en]').forEach(option => {
-                const zhText = option.getAttribute('data-zh');
-                const enText = option.getAttribute('data-en');
-                if (lang === 'zh') {
-                    option.innerHTML = zhText;
-                } else {
-                    option.innerHTML = enText;
-                }
-            });
-        }
-
-        // Initialize language
-        currentLang = getPreferredLanguage();
-        switchLanguage(currentLang);
-
-        // Add event listeners to language switch buttons
-        document.getElementById('langSwitch').addEventListener('click', () => {
-            const newLang = currentLang === 'zh' ? 'en' : 'zh';
-            switchLanguage(newLang);
-        });
-
-        document.getElementById('mobileLangSwitch').addEventListener('click', () => {
-            const newLang = currentLang === 'zh' ? 'en' : 'zh';
-            switchLanguage(newLang);
-        });
-
-        // Mobile Menu Toggle
         const menuBtn = document.getElementById('menuBtn');
         const mobileMenu = document.getElementById('mobileMenu');
+        const navbar = document.getElementById('navbar');
+
+        // 菜单切换
         menuBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
+            menuBtn.innerHTML = mobileMenu.classList.contains('hidden') 
+                ? '<i class="fas fa-bars text-2xl"></i>' 
+                : '<i class="fas fa-times text-2xl"></i>';
         });
 
-        // Smooth Scroll
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-                if (targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                    // Close Mobile Menu
-                    mobileMenu.classList.add('hidden');
-                }
-            });
-        });
-
-        // Navbar Scroll Effect
+        // 导航栏滚动效果
         window.addEventListener('scroll', () => {
-            const navbar = document.getElementById('navbar');
             if (window.scrollY > 50) {
-                navbar.classList.add('py-2', 'shadow-xl');
-                navbar.classList.remove('py-3');
+                navbar.classList.add('h-14', 'shadow-lg');
+                navbar.classList.remove('h-16');
             } else {
-                navbar.classList.add('py-3');
-                navbar.classList.remove('py-2', 'shadow-xl');
+                navbar.classList.add('h-16');
+                navbar.classList.remove('h-14', 'shadow-lg');
             }
         });
 
-        // Scroll Animation
-        const observerOptions = {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.1
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('animate-fade-in');
-                    observer.unobserve(entry.target);
-                }
+        // 点击移动端菜单后关闭
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuBtn.innerHTML = '<i class="fas fa-bars text-2xl"></i>';
             });
-        }, observerOptions);
-
-        document.querySelectorAll('section').forEach(section => {
-            observer.observe(section);
         });
     </script>
 </body>
