@@ -9,3 +9,7 @@ markdown: kramdown
 
 plugins:
   - jekyll-sitemap
+
+collections:
+  products:
+    output: true

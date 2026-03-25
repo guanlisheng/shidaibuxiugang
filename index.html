@@ -141,107 +141,79 @@ description: 专业不锈钢制品定制加工厂家
 
             <!-- 产品分类网格 -->
             <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- 产品卡片1：不锈钢厨柜/厨房设备 -->
-                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group border border-gray-100">
-                    <div class="h-60 overflow-hidden">
-                        <img src="./assets/images/不锈钢厨柜.jpg" alt="不锈钢厨柜" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">家用商用不锈钢厨柜</h3>
-                        <p class="text-gray-600 mb-4">304不锈钢整体厨柜、转角柜，防水防潮防腐蚀，适配家庭厨房、餐饮后厨，支持尺寸定制。</p>
-                    </div>
+
+              {% for product in site.products limit:3 %}
+
+              <a href="{{ product.url }}"
+                 class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition">
+
+                <div class="h-60 overflow-hidden">
+                  <img src="{{ product.image }}"
+                       alt="{{ product.title }}"
+                       class="w-full h-full object-cover group-hover:scale-105 transition">
                 </div>
 
-                <!-- 产品卡片2：不锈钢岗亭 -->
-                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group border border-gray-100">
-                    <div class="h-60 overflow-hidden">
-                        <img src="./assets/images/不锈钢岗亭.jpg" alt="不锈钢岗亭" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">不锈钢岗亭</h3>
-                        <p class="text-gray-600 mb-4">保安岗亭、收费亭、值班亭，坚固耐用，防风防雨，支持尺寸、户型定制，适用于小区、园区、工地等场景。</p>
-                    </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-bold text-gray-800 mb-2">
+                    {{ product.title }}
+                  </h3>
+                  <p class="text-gray-600">
+                    {{ product.description }}
+                  </p>
                 </div>
 
-                <!-- 产品卡片3：不锈钢手推车 -->
-                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group border border-gray-100">
-                    <div class="h-60 overflow-hidden">
-                        <img src="./assets/images/不锈钢手推车.jpg" alt="不锈钢手推车" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">不锈钢手推车</h3>
-                        <p class="text-gray-600 mb-4">多层商用手推车、餐车、工具车，静音万向轮，承重强，适配餐饮、医疗、车间、仓库等场景。</p>
-                    </div>
+              </a>
+
+              {% endfor %}
+
+            </div>
+
+            <!-- 客户定制产品卡片 -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group lg:col-span-3 border border-gray-100">
+              <div class="p-6">
+
+                <h3 class="text-xl font-bold text-gray-800 mb-4">
+                  真实客户定制案例（支持复杂非标加工）
+                </h3>
+
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+
+                  {% for item in site.data.custom_cases %}
+
+                  <div class="group">
+                    <img
+                      src="{{ item.image }}"
+                      alt="{{ item.title }}"
+                      class="rounded-lg w-full h-48 object-cover group-hover:scale-105 transition">
+
+                    <p class="text-sm mt-2 font-medium text-gray-700">
+                      {{ item.title }}
+                    </p>
+
+                    <p class="text-xs text-gray-500">
+                      {{ item.desc }}
+                    </p>
+                  </div>
+
+                  {% endfor %}
+
                 </div>
 
-                <!-- 产品卡片4：商用厨房设备 -->
-                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group border border-gray-100">
-                    <div class="h-60 overflow-hidden">
-                        <img src="./assets/images/厨房油烟罩.jpg" alt="厨房油烟罩" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">商用厨房不锈钢设备</h3>
-                        <p class="text-gray-600 mb-4">油烟罩、水池、操作台、小吃车等餐饮后厨设备，食品级304不锈钢，支持后厨整体定制。</p>
-                    </div>
-                </div>
+                <!-- 文案 + 转化 -->
+                <p class="text-gray-600 mt-6">
+                  收割机油箱、不锈钢漏斗、异形件、设备外壳等各类非标不锈钢制品，
+                  均可来图、来样定制，支持单件加工与批量生产。
+                </p>
 
-                <!-- 产品卡片5：不锈钢仓储/货架 -->
-                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group border border-gray-100">
-                    <div class="h-60 overflow-hidden">
-                        <img src="./assets/images/食品厂冷冻食品的架子.jpg" alt="不锈钢货架" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">不锈钢仓储货架/柜子</h3>
-                        <p class="text-gray-600 mb-4">食品厂冷冻货架、储物柜、文件柜、工具箱，防潮防锈，承重性强，支持非标尺寸定制。</p>
-                    </div>
-                </div>
+              </div>
+            </div>
 
-                <!-- 产品卡片6：市政/工程配套制品 -->
-                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group border border-gray-100">
-                    <div class="h-60 overflow-hidden">
-                        <img src="./assets/images/不锈钢广告牌.jpg" alt="不锈钢广告牌" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">市政工程不锈钢制品</h3>
-                        <p class="text-gray-600 mb-4">宣传栏、广告牌、地沟板、护栏等，户外耐候性强，支持工程批量定制。</p>
-                    </div>
-                </div>
-
-                <!-- 产品卡片7：不锈钢庭院围栏/护栏 -->
-                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group border border-gray-100">
-                    <div class="h-60 overflow-hidden">
-                        <img src="./assets/images/不锈钢庭院围栏.jpg" alt="不锈钢庭院围栏" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">不锈钢庭院围栏/护栏</h3>
-                        <p class="text-gray-600 mb-4">欧式不锈钢庭院围栏、院墙护栏、阳台栏杆，防锈耐用，款式可定制，适配自建房、别墅、厂区围墙。</p>
-                    </div>
-                </div>
-
-                <!-- 产品卡片8：不锈钢烘干层架/推车 -->
-                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group border border-gray-100">
-                    <div class="h-60 overflow-hidden">
-                        <img src="./assets/images/不锈钢手推车.jpg" alt="不锈钢烘干层架推车" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy">
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">不锈钢烘干层架/推车</h3>
-                        <p class="text-gray-600 mb-4">食品厂烘干架、冷冻层架、移动推车，食品级不锈钢材质，层数、尺寸可定制，适配食品加工、冷链仓储场景。</p>
-                    </div>
-                </div>
-
-                <!-- 客户定制产品卡片 -->
-                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group lg:col-span-3 border border-gray-100">
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-4">非标定制产品合集</h3>
-                        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-                            <img src="./assets/images/客户定制01.jpg" alt="客户定制产品" class="rounded-lg w-full h-48 object-cover" loading="lazy">
-                            <img src="./assets/images/客户定制02.jpg" alt="客户定制产品" class="rounded-lg w-full h-48 object-cover" loading="lazy">
-                            <img src="./assets/images/客户定制03.jpg" alt="客户定制产品" class="rounded-lg w-full h-48 object-cover" loading="lazy">
-                            <img src="./assets/images/地沟板.jpg" alt="不锈钢地沟板" class="rounded-lg w-full h-48 object-cover" loading="lazy">
-                        </div>
-                        <p class="text-gray-600 mt-4">收割机油箱、不锈钢漏斗、异形件、设备外壳等各类非标不锈钢制品，均可来图、来样定制，满足您的个性化需求。</p>
-                    </div>
-                </div>
+            <!-- 查看更多按钮 -->
+            <div class="text-center mt-10">
+              <a href="{{ '/products/' | relative_url }}"
+                 class="inline-block bg-primary text-white px-8 py-3 rounded-lg hover:bg-green-800 transition">
+                 查看更多产品 →
+              </a>
             </div>
         </div>
     </section>
