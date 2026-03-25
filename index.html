@@ -168,44 +168,35 @@ description: 专业不锈钢制品定制加工厂家
 
             </div>
 
-            <!-- 客户定制产品卡片 -->
-            <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group lg:col-span-3 border border-gray-100">
-              <div class="p-6">
+            <!-- 过渡区：非标能力说明 -->
+            <div class="text-center mt-16 mb-10">
+              <p class="text-gray-500 text-sm text-center mt-6">
+                非标定制案例 · 来图来样加工 · 支持批量生产
+              </p>
+            </div>
 
-                <h3 class="text-xl font-bold text-gray-800 mb-4">
-                  真实客户定制案例（支持复杂非标加工）
-                </h3>
+            <!-- 客户定制案例（弱卡片，不抢主产品） -->
+            <div class="bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-gray-100">
 
-                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+              <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
 
-                  {% for item in site.data.custom_cases %}
+                {% for item in site.data.custom_cases limit:4 %}
 
-                  <div class="group">
-                    <img
-                      src="{{ item.image }}"
-                      alt="{{ item.title }}"
-                      class="rounded-lg w-full h-48 object-cover group-hover:scale-105 transition">
+                <div class="group">
+                  <img
+                    src="{{ item.image }}"
+                    alt="{{ item.title }}"
+                    class="rounded-lg w-full h-40 object-cover group-hover:scale-105 transition">
 
-                    <p class="text-sm mt-2 font-medium text-gray-700">
-                      {{ item.title }}
-                    </p>
-
-                    <p class="text-xs text-gray-500">
-                      {{ item.desc }}
-                    </p>
-                  </div>
-
-                  {% endfor %}
-
+                  <p class="text-sm mt-2 font-medium text-gray-700">
+                    {{ item.title }}
+                  </p>
                 </div>
 
-                <!-- 文案 + 转化 -->
-                <p class="text-gray-600 mt-6">
-                  收割机油箱、不锈钢漏斗、异形件、设备外壳等各类非标不锈钢制品，
-                  均可来图、来样定制，支持单件加工与批量生产。
-                </p>
+                {% endfor %}
 
               </div>
+
             </div>
 
             <!-- 查看更多按钮 -->
@@ -255,24 +246,32 @@ description: 专业不锈钢制品定制加工厂家
 
             </div>
 
+            <div class="text-center mt-16 mb-10">
+
+              <p class="text-gray-500 text-sm">
+                持续更新工厂实拍 · 更多加工过程与细节展示
+              </p>
+
+            </div>
+
             <!-- 抖音伪更新视频流 -->
-            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
-              {% for item in site.data.douyin reversed %}
+              {% for item in site.data.douyin limit:6 %}
 
-              <div class="bg-white rounded-xl shadow-md p-4 hover:shadow-lg transition">
+              <div class="bg-gray-50 rounded-xl p-4 hover:shadow-md transition group">
 
-                <h3 class="font-bold text-lg mb-2">
-                    {{ item.title }}
-                </h3>
-
-                <p class="text-gray-500 text-sm mb-3">
-                  📍 安徽工厂 · {{ site.time | date: "%Y-%m-%d" }}
+                <p class="text-xs text-gray-400 mb-2">
+                  📍 工厂日常 · {{ site.time | date: "%m-%d" }}
                 </p>
 
-                <a href="{{ item.link }}" target="_blank" rel="nofollow"
-                   class="text-green-600 font-medium hover:underline">
-                   👉 查看视频
+                <h3 class="font-medium text-gray-800 mb-3 line-clamp-2">
+                  {{ item.title }}
+                </h3>
+
+                <a href="{{ item.link }}" target="_blank"
+                   class="text-green-600 text-sm hover:underline">
+                   ▶ 查看视频
                 </a>
 
               </div>
