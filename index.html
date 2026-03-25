@@ -229,125 +229,30 @@ description: 专业不锈钢制品定制加工厂家
 
             <!-- 视频网格布局，响应式适配 -->
             <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- 视频卡片1：不锈钢小吃车 -->
-                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group border border-gray-100">
-                    <div class="bg-gray-100 overflow-hidden">
-                        <video 
-                            class="w-full video-aspect object-cover" 
-                            src="./assets/videos/不锈钢小吃车.mp4" 
-                            controls 
-                            preload="metadata"
-                            playsinline
-                            webkit-playsinline
-                            x5-playsinline>
-                            您的浏览器不支持视频播放，请升级浏览器
-                        </video>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">不锈钢小吃车</h3>
-                        <p class="text-gray-600">商用移动小吃车、摆摊餐车，按需定制尺寸与功能，食品级不锈钢材质，坚固耐用。</p>
-                    </div>
+
+              {% assign videos = site.data.videos | slice: 0, 3 %}
+
+              {% for v in videos %}
+              <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group border border-gray-100">
+
+                <div class="bg-gray-100 overflow-hidden">
+                  <video 
+                    class="w-full video-aspect object-cover" 
+                    src="{{ '/assets/videos/' | append: v.file | relative_url }}"
+                    controls 
+                    preload="metadata"
+                    playsinline>
+                  </video>
                 </div>
 
-                <!-- 视频卡片2：院子围栏 -->
-                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group border border-gray-100">
-                    <div class="bg-gray-100 overflow-hidden">
-                        <video 
-                            class="w-full video-aspect object-cover" 
-                            src="./assets/videos/院子围栏.mp4" 
-                            controls 
-                            preload="metadata"
-                            playsinline
-                            webkit-playsinline
-                            x5-playsinline>
-                            您的浏览器不支持视频播放，请升级浏览器
-                        </video>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">不锈钢院子围栏</h3>
-                        <p class="text-gray-600">庭院/厂区不锈钢围栏、护栏，款式可定制，焊接牢固，防锈防腐，户外耐用性强。</p>
-                    </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-bold text-gray-800 mb-2">{{ v.title }}</h3>
+                  <p class="text-gray-600">{{ v.desc }}</p>
                 </div>
 
-                <!-- 视频卡片3：不锈钢水池 -->
-                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group border border-gray-100">
-                    <div class="bg-gray-100 overflow-hidden">
-                        <video 
-                            class="w-full video-aspect object-cover" 
-                            src="./assets/videos/不锈钢水池.mp4" 
-                            controls 
-                            preload="metadata"
-                            playsinline
-                            webkit-playsinline
-                            x5-playsinline>
-                            您的浏览器不支持视频播放，请升级浏览器
-                        </video>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">不锈钢水池</h3>
-                        <p class="text-gray-600">商用/家用不锈钢洗手池、洗菜池、后厨水池，单槽/双槽/多槽均可定制，食品级材质。</p>
-                    </div>
-                </div>
+              </div>
+              {% endfor %}
 
-                <!-- 视频卡片4：不锈钢工具箱 -->
-                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group border border-gray-100">
-                    <div class="bg-gray-100 overflow-hidden">
-                        <video 
-                            class="w-full video-aspect object-cover" 
-                            src="./assets/videos/不锈钢工具箱.mp4" 
-                            controls 
-                            preload="metadata"
-                            playsinline
-                            webkit-playsinline
-                            x5-playsinline>
-                            您的浏览器不支持视频播放，请升级浏览器
-                        </video>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">不锈钢工具箱</h3>
-                        <p class="text-gray-600">工业级不锈钢工具箱、储物柜，防水防尘，承重性强，适配车间、户外、车载多场景。</p>
-                    </div>
-                </div>
-
-                <!-- 视频卡片5：不锈钢漏斗 -->
-                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group border border-gray-100">
-                    <div class="bg-gray-100 overflow-hidden">
-                        <video 
-                            class="w-full video-aspect object-cover" 
-                            src="./assets/videos/不锈钢漏斗.mp4" 
-                            controls 
-                            preload="metadata"
-                            playsinline
-                            webkit-playsinline
-                            x5-playsinline>
-                            您的浏览器不支持视频播放，请升级浏览器
-                        </video>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">不锈钢漏斗</h3>
-                        <p class="text-gray-600">食品/工业用不锈钢漏斗、异形下料口，尺寸、口径、形状均可非标定制，无缝焊接。</p>
-                    </div>
-                </div>
-
-                <!-- 视频卡片6：收割机油箱 -->
-                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 group border border-gray-100">
-                    <div class="bg-gray-100 overflow-hidden">
-                        <video 
-                            class="w-full video-aspect object-cover" 
-                            src="./assets/videos/收割机油箱.mp4" 
-                            controls 
-                            preload="metadata"
-                            playsinline
-                            webkit-playsinline
-                            x5-playsinline>
-                            您的浏览器不支持视频播放，请升级浏览器
-                        </video>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">收割机油箱</h3>
-                        <p class="text-gray-600">农机配套不锈钢油箱、储液罐，非标定制，防漏防腐，适配各类农机设备、工业设备。</p>
-                    </div>
-                </div>
             </div>
 
             <!-- 抖音伪更新视频流 -->
@@ -375,6 +280,15 @@ description: 专业不锈钢制品定制加工厂家
               {% endfor %}
 
             </div>
+
+            <!-- 查看更多 -->
+            <div class="text-center mt-10">
+              <a href="{{ '/videos/' | relative_url }}"
+                 class="inline-block bg-primary text-white px-6 py-3 rounded-lg hover:bg-green-800 transition">
+                 查看更多视频 →
+              </a>
+            </div>
+
         </div>
     </section>
 
