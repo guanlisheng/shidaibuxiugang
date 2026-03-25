@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<div class="max-w-3xl mx-auto px-4 py-12">
+
+  <h1 class="text-3xl font-bold mb-4">{{ page.title }}</h1>
+
+  <p class="text-gray-500 text-sm mb-8">
+    📅 {{ page.date | date: "%Y-%m-%d" }}
+  </p>
+
+  <div class="space-y-6 leading-relaxed">
+    {{ content }}
+  </div>
+
+  <div class="mt-10 border-t pt-6 text-sm text-gray-600">
+    {{ page.keywords }}
+  </div>
+
+  <div class="mt-6">
+    <a href="{{ '/news/' | relative_url }}" class="text-green-600 hover:underline">
+      ← 返回资讯列表
+    </a>
+  </div>
+
+</div>

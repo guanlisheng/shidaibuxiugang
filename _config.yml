@@ -1,0 +1,11 @@
+title: 赵中伍不锈钢制品
+description: 凤台县不锈钢加工厂家
+baseurl: ""
+url: "https://zhaozhongwu.guanlisheng.com"
+
+permalink: /news/:year-:month-:day-:title/
+
+markdown: kramdown
+
+plugins:
+  - jekyll-sitemap
