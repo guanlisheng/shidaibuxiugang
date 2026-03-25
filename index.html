@@ -687,38 +687,37 @@ description: 专业不锈钢制品定制加工厂家
                                 <p class="text-gray-300">安徽省淮南市凤台县关店乡赵埔村东埔</p>
                             </div>
                         </div>
-
-                        <div class="flex items-start gap-4">
-                            <div class="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center shrink-0">
-                                <i class="fas fa-clock text-primary text-xl"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-bold text-lg mb-1">营业时间</h4>
-                                <p class="text-gray-300">周一至周五 8:00-18:00</p>
-                            </div>
-                        </div>
                     </div>
                 </div>
 
                 <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-8">
                     <h3 class="text-xl font-bold mb-6">在线咨询</h3>
-                    <form class="space-y-4">
-                        <div>
-                            <label class="block text-gray-300 mb-2 text-sm">您的姓名</label>
-                            <input type="text" class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors" placeholder="请输入您的姓名">
-                        </div>
-                        <div>
-                            <label class="block text-gray-300 mb-2 text-sm">联系电话</label>
-                            <input type="tel" class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors" placeholder="请输入您的联系电话">
-                        </div>
-                        <div>
-                            <label class="block text-gray-300 mb-2 text-sm">定制需求</label>
-                            <textarea rows="4" class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors" placeholder="请描述您需要的产品、材质、尺寸等定制需求"></textarea>
-                        </div>
-                        <button type="button" class="w-full bg-primary hover:bg-green-800 text-white font-medium py-3 rounded-lg transition-colors">
-                            提交咨询
-                        </button>
-                    </form>
+                    <div class="space-y-4">
+
+                      <a href="tel:15955475126"
+                         class="block w-full bg-primary text-white text-center py-3 rounded-lg">
+                         📞 电话咨询（最快）
+                      </a>
+
+                      <a href="https://v.douyin.com/hQEk7x118YM/"
+                         target="_blank"
+                         class="block w-full bg-black text-white text-center py-3 rounded-lg">
+                         🎬 抖音私信咨询
+                      </a>
+
+                      <button onclick="copyWeChat()"
+                         class="w-full bg-white text-gray-800 py-3 rounded-lg border">
+                         📋 复制微信号
+                      </button>
+
+                    </div>
+
+                    <script>
+                    function copyWeChat() {
+                      navigator.clipboard.writeText("15955475126");
+                      alert("微信号已复制，请打开微信添加好友");
+                    }
+                    </script>
                 </div>
             </div>
         </div>
