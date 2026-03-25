@@ -3,20 +3,28 @@ layout: default
 title: 行业资讯
 ---
 
-<div class="max-w-4xl mx-auto px-4 py-12">
+<div class="max-w-3xl mx-auto px-4 py-12">
 
-<h1 class="text-3xl font-bold mb-8">行业资讯</h1>
+  <h1 class="text-2xl font-bold mb-6">行业资讯</h1>
 
-<div class="space-y-6">
-  {% for post in site.posts %}
-    <a href="{{ post.url }}" class="block bg-white p-6 rounded-xl shadow hover:shadow-lg">
-      <h2 class="text-xl font-bold mb-2">{{ post.title }}</h2>
-      <p class="text-gray-500 text-sm mb-2">
-        📅 {{ post.date | date: "%Y-%m-%d" }}
-      </p>
-      <p class="text-gray-600">{{ post.description }}</p>
-    </a>
-  {% endfor %}
-</div>
+  <div class="space-y-6">
+    {% for post in site.posts %}
+      <div class="border-b pb-4">
+        <h2 class="text-xl font-semibold">
+          <a href="{{ post.url }}" class="text-green-600 hover:underline">
+            {{ post.title }}
+          </a>
+        </h2>
+
+        <p class="text-sm text-gray-500">
+          {{ post.date | date: "%Y-%m-%d" }} · {{ post.category }}
+        </p>
+
+        <p class="mt-2 text-gray-700">
+          {{ post.description }}
+        </p>
+      </div>
+    {% endfor %}
+  </div>
 
 </div>
