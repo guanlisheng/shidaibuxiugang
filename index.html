@@ -141,8 +141,11 @@ description: 专业不锈钢制品定制加工厂家
 
             <!-- 产品分类网格 -->
             <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+              {% assign featured = site.products | where: "featured", true %}
+              {% assign normal = site.products | where_exp: "p", "p.featured != true" %}
+              {% assign products = featured | concat: normal %}
 
-              {% for product in site.products limit:3 %}
+              {% for product in products limit:3 %}
 
               <a href="{{ product.url }}"
                  class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition">

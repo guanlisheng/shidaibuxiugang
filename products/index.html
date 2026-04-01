@@ -15,19 +15,40 @@ description: 不锈钢制品定制加工产品展示
     </div>
 
     <!-- 产品列表 -->
+    {% assign featured = site.products | where: "featured", true %}
+    {% assign normal = site.products | where_exp: "p", "p.featured != true" %}
+
+    {% assign products = featured | concat: normal %}
+
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
-      {% for product in site.products %}
+      {% for product in products %}
 
       <a href="{{ product.url }}"
-         class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition">
+         class="group bg-white rounded-xl overflow-hidden transition
+                {% if product.featured %}
+                  shadow-xl ring-2 ring-primary scale-[1.02]
+                {% else %}
+                  shadow-md hover:shadow-xl
+                {% endif %}">
 
-        <div class="h-60 overflow-hidden">
+        <!-- 图片 -->
+        <div class="relative h-60 overflow-hidden">
+
           <img src="{{ product.image }}"
                alt="{{ product.title }}"
-               class="w-full h-full object-cover">
+               class="w-full h-full object-cover
+                      group-hover:scale-105 transition duration-500">
+
+          {% if product.featured %}
+          <div class="absolute top-2 left-2 bg-green-600 text-white text-xs px-2 py-1 rounded">
+            主营
+          </div>
+          {% endif %}
+
         </div>
 
+        <!-- 文案 -->
         <div class="p-6">
           <h3 class="text-xl font-bold text-gray-800 mb-2">
             {{ product.title }}
@@ -36,6 +57,12 @@ description: 不锈钢制品定制加工产品展示
           <p class="text-gray-600">
             {{ product.description }}
           </p>
+
+          {% if product.featured %}
+          <p class="text-green-600 text-sm mt-2">
+            查看安装案例 →
+          </p>
+          {% endif %}
         </div>
 
       </a>
@@ -43,7 +70,6 @@ description: 不锈钢制品定制加工产品展示
       {% endfor %}
 
     </div>
-
   </div>
 
 </section>
